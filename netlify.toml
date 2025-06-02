@@ -6,9 +6,6 @@
 [functions]
   directory = "../../netlify/functions"
 
-[[plugins]]
-  package = "@netlify/next"
-
 [build.environment]
   NEXT_PUBLIC_FIREBASE_API_KEY = AIzaSyCJTSf_aQY1DFrlKO4HjPz5svShJ8Vjtok
   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = breeze-dvlp.firebaseapp.com
