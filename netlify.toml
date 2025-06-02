@@ -1,0 +1,23 @@
+[build]
+  base = "apps/web"
+  publish = ".next"
+  command = "pnpm build"
+
+[functions]
+  directory = "../../netlify/functions"
+
+[[plugins]]
+  package = "@netlify/next"
+
+[build.environment]
+  NEXT_PUBLIC_FIREBASE_API_KEY = AIzaSyCJTSf_aQY1DFrlKO4HjPz5svShJ8Vjtok
+  NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = breeze-dvlp.firebaseapp.com
+  NEXT_PUBLIC_FIREBASE_PROJECT_ID = breeze-dvlp
+  NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET = breeze-dvlp.firebasestorage.app
+  NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID = 1033961870898
+  NEXT_PUBLIC_FIREBASE_APP_ID = 1:1033961870898:web:6ff3969333e9cf00b24e2b
+  NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID = G-ZDXN0HDW6N
+  NEXT_PUBLIC_SEGMENT_WRITE_KEY = 3dzK2LF7KXDMRUYqTBjMoFZ1dC9v4ipB
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = pk_test_51RLfNjPr5nnb4eu6mybPHqzy93KNBNhtV5Fibssyzwzt1b8Nv5eVwC7ayLIO76E8ltTxK9Jc6Q9QsuphIQ5qmgAP00tYJNTfRY
+  NEXT_PUBLIC_ONESIGNAL_APP_ID = b2d7ec96-2bf9-4ce6-b59f-3d7c002328a2
+  NEXT_PUBLIC_PRICE_LOOKUP_KEY = usual_monthly
