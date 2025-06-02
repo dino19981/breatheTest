@@ -1,0 +1,163 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/dev",
+      "regex": "^/dev(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dev(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/learning-center",
+      "regex": "^/learning\\-center(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learning\\-center(?:/)?$"
+    },
+    {
+      "page": "/learning-center/benefits",
+      "regex": "^/learning\\-center/benefits(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learning\\-center/benefits(?:/)?$"
+    },
+    {
+      "page": "/learning-center/protocols",
+      "regex": "^/learning\\-center/protocols(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learning\\-center/protocols(?:/)?$"
+    },
+    {
+      "page": "/learning-center/research",
+      "regex": "^/learning\\-center/research(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learning\\-center/research(?:/)?$"
+    },
+    {
+      "page": "/learning-center/techniques",
+      "regex": "^/learning\\-center/techniques(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learning\\-center/techniques(?:/)?$"
+    },
+    {
+      "page": "/learning-center/techniques/box-breathing",
+      "regex": "^/learning\\-center/techniques/box\\-breathing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/learning\\-center/techniques/box\\-breathing(?:/)?$"
+    },
+    {
+      "page": "/legal",
+      "regex": "^/legal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/legal(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/membership",
+      "regex": "^/membership(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/membership(?:/)?$"
+    },
+    {
+      "page": "/notifications",
+      "regex": "^/notifications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/notifications(?:/)?$"
+    },
+    {
+      "page": "/profile",
+      "regex": "^/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile(?:/)?$"
+    },
+    {
+      "page": "/profile/achievements",
+      "regex": "^/profile/achievements(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile/achievements(?:/)?$"
+    },
+    {
+      "page": "/session",
+      "regex": "^/session(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/session(?:/)?$"
+    },
+    {
+      "page": "/sessions",
+      "regex": "^/sessions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sessions(?:/)?$"
+    },
+    {
+      "page": "/settings",
+      "regex": "^/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings(?:/)?$"
+    },
+    {
+      "page": "/signup",
+      "regex": "^/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/signup(?:/)?$"
+    },
+    {
+      "page": "/social",
+      "regex": "^/social(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/social(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

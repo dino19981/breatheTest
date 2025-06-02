@@ -1,4 +1,4 @@
-// File: /Users/artem.stepanov/frontend-mono/apps/web/app/session/layout.tsx
+// File: /Users/artem.stepanov/breatheTest/apps/web/app/session/layout.tsx
 import * as entry from '../../../../app/session/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

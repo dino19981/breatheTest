@@ -1,1 +1,1530 @@
-../../../backend/server/api/openapi.yaml
+openapi: 3.0.3
+info:
+  contact:
+    email: breezeapp@proton.me
+    name: Breeze Team
+    url: https://github.com/Breez3App/breeze/issues
+  title: Breathing App API
+  version: 1.0.0
+  description: API for user profile management, breath session uploads, and session history
+servers:
+  - url: "/api"
+    description: Local development server
+    variables:
+      host:
+        default: http://localhost:8080
+        enum:
+          - http://localhost:8080
+          - http://localhost:4010
+          - https://server-ipv3wws5sq-ma.a.run.app
+
+security:
+  - jwt: []
+paths:
+  /health/v1:
+    get:
+      description: Get the health of the API server
+      operationId: getHealthV1
+      summary: Get health of the API
+      security: [] # No security required for this endpoint
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                x-go-type: health.CheckerResult
+              examples:
+                healthy:
+                  summary: Healthy response
+                  value:
+                    status: "up"
+                    details:
+                      db:
+                        status: "up"
+                        timestamp: "2025-04-24T13:45:58.595965627Z"
+          description: The API is healthy
+        "503":
+          description: The API is unavailable
+          content:
+            application/json:
+              schema:
+                type: object
+                x-go-type: health.CheckerResult
+              examples:
+                unhealthy:
+                  summary: Unhealthy response
+                  value:
+                    status: "down"
+                    details:
+                      db:
+                        status: "down"
+                        timestamp: "2025-04-24T13:45:58.595965627Z"
+
+  /metadata/v1/achievements:
+    get:
+      summary: Get available achievements
+      operationId: getAchievements
+      parameters:
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/size"
+      description: |
+        Get all achievements available in the app.
+        Use this endpoint to fetch the list of achievements that users can unlock.
+      responses:
+        "200":
+          description: List of achievements
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AchievementPageV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+  /metadata/v1/documents:
+    get:
+      summary: Get available documents
+      operationId: getDocuments
+      parameters:
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/size"
+      description: |
+        Get all documents available in the app, including different versions nad locales.
+        Use this endpoint to fetch the list of documents such as privacy policy and terms of service.
+      responses:
+        "200":
+          description: List of documents
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DocumentPageV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+  /metadata/v1/premiums:
+    get:
+      summary: Get available premiums
+      operationId: getPremiums
+      parameters:
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/size"
+      description: |
+        Get all premiums available in the app.
+        Use this endpoint to fetch the list of premium subscriptions that users can purchase.
+      responses:
+        "200":
+          description: List of premiums
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PremiumPageV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+  /users/v1:
+    post:
+      summary: Create a new user profile
+      operationId: createUserProfile
+      requestBody:
+        description: User profile data to create
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserProfileV1"
+      responses:
+        "201":
+          description: User profile created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserProfileV1"
+        "400":
+          $ref: "#/components/responses/badRequest"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+        "409":
+          $ref: "#/components/responses/conflict"
+        "422":
+          $ref: "#/components/responses/unprocessableEntity"
+
+  /users/v1/{userId}:
+    parameters:
+      - $ref: "#/components/parameters/userId"
+    get:
+      summary: Get full user profile
+      operationId: getUserProfile
+      responses:
+        "200":
+          description: Full profile data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserProfileV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+        "404":
+          $ref: "#/components/responses/notFound"
+    delete:
+      summary: Delete user profile
+      operationId: deleteUserProfile
+      responses:
+        "204":
+          description: User profile deleted successfully
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+        "404":
+          $ref: "#/components/responses/notFound"
+    patch:
+      summary: Update user profile
+      operationId: patchUserProfile
+      requestBody:
+        required: true
+        description: User profile data to update
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: John Doe
+      responses:
+        "200":
+          description: Updated user profile
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserProfileV1"
+        "400":
+          $ref: "#/components/responses/badRequest"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+        "422":
+          $ref: "#/components/responses/unprocessableEntity"
+
+  /users/v1/{userId}/progress:
+    delete:
+      summary: Reset user progress
+      operationId: resetUserProgress
+      parameters:
+        - $ref: "#/components/parameters/userId"
+      description: |
+        Resets all progress for the user, including achievements and personal best results.
+      responses:
+        "204":
+          description: Progress reset successfully
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+        "404":
+          $ref: "#/components/responses/notFound"
+
+  /users/v1/{userId}/progress/achievements:
+    parameters:
+      - $ref: "#/components/parameters/userId"
+    get:
+      summary: Get user achievements
+      operationId: getUserAchievements
+      parameters:
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/size"
+      description: |
+        Get all achievements that a user has unlocked.
+        Use this endpoint to fetch the list of achievements that users have completed.
+      responses:
+        "200":
+          description: List of user achievements
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserAchievementPageV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+  /users/v1/{userId}/progress/personal-best-results:
+    parameters:
+      - $ref: "#/components/parameters/userId"
+    get:
+      summary: Get user personal best results
+      operationId: getUserPersonalBestResults
+      description: |
+        Get the best results of a user.
+        Use this endpoint to fetch the best results of a user in terms of breathing sessions.
+      responses:
+        "200":
+          description: User best results
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserPersonalBestResultsV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+  /users/v1/{userId}/premiums:
+    parameters:
+      - $ref: "#/components/parameters/userId"
+    get:
+      summary: Get user-specific premiums
+      operationId: getUserPremiums
+      parameters:
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/size"
+      description: |
+        Fetch the list of premium subscriptions associated with a specific user.
+        This endpoint returns the premiums that the user has purchased or is eligible for.
+      responses:
+        "200":
+          description: List of user-specific premiums
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserPremiumPageV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+  /users/v1/{userId}/sessions:
+    parameters:
+      - $ref: "#/components/parameters/userId"
+    post:
+      summary: Upload result of a breathing session
+      operationId: postSession
+      requestBody:
+        required: true
+        description: Session data to upload
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SessionV1"
+      responses:
+        "201":
+          description: Session result uploaded
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    format: ulid
+                    x-go-type: ulid.ULID
+                    x-go-type-import:
+                      path: github.com/oklog/ulid/v2
+                      name: ulid
+                    example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        "400":
+          $ref: "#/components/responses/badRequest"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+        "422":
+          $ref: "#/components/responses/unprocessableEntity"
+    get:
+      summary: Get breathing sessions list
+      operationId: getSessions
+      parameters:
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/size"
+      responses:
+        "200":
+          description: List of breathing sessions
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SessionPageV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+  /users/v1/{userId}/signed-documents:
+    parameters:
+      - $ref: "#/components/parameters/userId"
+    get:
+      summary: Get signed documents
+      operationId: getSignedDocuments
+      parameters:
+        - $ref: "#/components/parameters/page"
+        - $ref: "#/components/parameters/size"
+      responses:
+        "200":
+          description: List of signed documents
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserSignedDocumentPageV1"
+        "401":
+          $ref: "#/components/responses/unauthorized"
+        "403":
+          $ref: "#/components/responses/forbidden"
+
+components:
+  parameters:
+    userId:
+      name: userId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: ulid
+        x-go-type: ulid.ULID
+        x-go-type-import:
+          path: github.com/oklog/ulid/v2
+          name: ulid
+        example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+      description: Unique identifier of the user
+    page:
+      name: page
+      description: Page number
+      example: 0
+      in: query
+      required: false
+      schema:
+        default: 0
+        minimum: 0
+        type: integer
+    size:
+      name: size
+      description: Page size
+      example: 10
+      in: query
+      required: false
+      schema:
+        default: 10
+        minimum: 1
+        maximum: 100
+        type: integer
+
+  responses:
+    badRequest:
+      description: Bad request
+      content:
+        application/problem+json:
+          schema:
+            $ref: "#/components/schemas/ProblemDetailV1"
+          examples:
+            badRequest:
+              summary: Bad request response
+              value:
+                type: "https://example.com/probs/validation-error"
+                title: "Bad Request"
+                status: 400
+                detail: "The request was invalid or cannot be served."
+                instance: "/users/v1/0000XSNJG0MQJHBF4QX1EFD6Y3/sessions"
+                traceId: "b0e7d7054ce9c38330b276114ccec036"
+    notFound:
+      description: Not found
+      content:
+        application/problem+json:
+          schema:
+            $ref: "#/components/schemas/ProblemDetailV1"
+          examples:
+            notFound:
+              summary: Not found response
+              value:
+                type: "https://example.com/probs/not-found"
+                title: "Not Found"
+                status: 404
+                detail: "The requested resource was not found."
+                instance: "/users/v1/0000XSNJG0MQJHBF4QX1EFD6Y3/sessions"
+                traceId: "b0e7d7054ce9c38330b276114ccec036"
+    forbidden:
+      description: Forbidden
+      content:
+        application/problem+json:
+          schema:
+            $ref: "#/components/schemas/ProblemDetailV1"
+          examples:
+            forbidden:
+              summary: Forbidden response
+              value:
+                type: "https://example.com/probs/forbidden"
+                title: "Forbidden"
+                status: 403
+                detail: "You do not have permission to access this resource."
+                instance: "/metadata/v1/achievements"
+                traceId: "b0e7d7054ce9c38330b276114ccec036"
+    unauthorized:
+      description: Unauthorized
+      content:
+        application/problem+json:
+          schema:
+            $ref: "#/components/schemas/ProblemDetailV1"
+          examples:
+            unauthorized:
+              summary: Unauthorized response
+              value:
+                type: "https://example.com/probs/auth"
+                title: "Unauthorized"
+                status: 401
+                detail: "Authentication is required to access this resource."
+                instance: "/metadata/v1/achievements"
+                traceId: "b0e7d7054ce9c38330b276114ccec036"
+    conflict:
+      description: Conflict
+      content:
+        application/problem+json:
+          schema:
+            $ref: "#/components/schemas/ProblemDetailV1"
+          examples:
+            conflict:
+              summary: Conflict response
+              value:
+                type: "https://example.com/probs/conflict"
+                title: "Conflict"
+                status: 409
+                detail: "The request could not be completed due to a conflict with the current state of the target resource."
+                instance: "/users/v1/0000XSNJG0MQJHBF4QX1EFD6Y3/sessions"
+                traceId: "b0e7d7054ce9c38330b276114ccec036"
+    unprocessableEntity:
+      description: Unprocessable Entity
+      content:
+        application/problem+json:
+          schema:
+            $ref: "#/components/schemas/ProblemDetailV1"
+          examples:
+            unprocessableEntity:
+              summary: Unprocessable Entity response
+              value:
+                type: "https://example.com/probs/unprocessable-entity"
+                title: "Unprocessable Entity"
+                status: 422
+                detail: "The request was well-formed but was unable to be followed due to semantic errors."
+                instance: "/users/v1/0000XSNJG0MQJHBF4QX1EFD6Y3/sessions"
+                traceId: "b0e7d7054ce9c38330b276114ccec036"
+
+  schemas:
+    AchievementV1:
+      description: Achievement data
+      type: object
+      example:
+        id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        name: "First Breath"
+        description: "Complete your first breathing session"
+        iconLink: "https://example.com/icon.png"
+      properties:
+        id:
+          type: string
+          readOnly: true
+          description: Unique identifier for the achievement
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        name:
+          readOnly: true
+          type: string
+          description: Name of the achievement
+        description:
+          readOnly: true
+          type: string
+          description: Detailed description of the achievement
+        iconLink:
+          readOnly: true
+          type: string
+          description: Link to the achievement's icon
+          format: uri
+      required:
+        - id
+        - name
+        - description
+        - iconLink
+
+    AchievementPageV1:
+      description: Page of achievements
+      example:
+        number: 0
+        size: 2
+        totalPages: 1
+        totalElements: 2
+        first: true
+        last: true
+        content:
+          - id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            name: "First Breath"
+            description: "Complete your first breathing session"
+            iconLink: "https://example.com/icon.png"
+          - id: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            name: "Ten Breaths"
+            description: "Complete ten breathing sessions"
+            iconLink: "https://example.com/icon2.png"
+      allOf:
+        - $ref: "#/components/schemas/PageV1"
+        - type: object
+          required:
+            - content
+          properties:
+            content:
+              type: array
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/AchievementV1"
+
+    AISummaryV1:
+      description: A summary of the AI analysis of the session
+      type: object
+      example:
+        rating: 96
+      properties:
+        rating:
+          type: integer
+          format: int32
+          maximum: 100
+          minimum: 0
+          readOnly: true
+      required:
+        - rating
+
+    CurrencyV1:
+      description: Supported currencies for pricing
+      type: string
+      example: DKK
+      enum:
+        - USD
+        - EUR
+        - GBP
+        - JPY
+        - AUD
+        - CAD
+        - CHF
+        - SEK
+        - DKK
+        - NOK
+        - NZD
+        - RUB
+        - SGD
+
+    DocumentV1:
+      description: Represents a document such as privacy policy or terms of service
+      type: object
+      example:
+        id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        title: "Privacy Policy"
+        contentLink: "https://example.com/privacy-policy"
+        version: "1.0.0"
+        createdAt: "2023-10-01T00:00:00Z"
+        locale: "en-US"
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the document
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        title:
+          type: string
+          description: Title of the document
+          readOnly: true
+        contentLink:
+          type: string
+          format: uri
+          description: Link to the document content
+          readOnly: true
+        version:
+          type: string
+          description: Version of the document
+          readOnly: true
+        createdAt:
+          type: string
+          format: date-time
+          description: Timestamp when the document was created
+          readOnly: true
+        locale:
+          $ref: "#/components/schemas/LocaleV1"
+      required:
+        - id
+        - title
+        - contentLink
+        - version
+        - createdAt
+        - locale
+
+    DocumentPageV1:
+      description: Page of documents
+      example:
+        number: 0
+        size: 2
+        totalPages: 1
+        totalElements: 2
+        first: true
+        last: true
+        content:
+          - id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            title: "Privacy Policy"
+            contentLink: "https://example.com/privacy-policy"
+            version: "1.0.0"
+            createdAt: "2023-10-01T00:00:00Z"
+            locale: "en-US"
+          - id: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            title: "Terms of Service"
+            contentLink: "https://example.com/terms-of-service"
+            version: "1.0.0"
+            createdAt: "2023-10-01T00:00:00Z"
+            locale: "en-US"
+      allOf:
+        - $ref: "#/components/schemas/PageV1"
+        - type: object
+          required:
+            - content
+          properties:
+            content:
+              type: array
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/DocumentV1"
+
+    LocaleV1:
+      description: Supported locales for documents
+      type: string
+      example: da-DK
+      enum:
+        - en-US
+        - fr-FR
+        - es-ES
+        - de-DE
+        - da-DK
+        - it-IT
+        - ja-JP
+        - zh-CN
+        - ru-RU
+
+    PageV1:
+      description: Page metadata
+      example:
+        number: 0
+        size: 10
+        totalPages: 10
+        totalElements: 100
+        first: true
+        last: true
+      required:
+        - number
+        - size
+        - totalPages
+        - totalElements
+        - first
+        - last
+      type: object
+      properties:
+        number:
+          type: integer
+          example: 0
+        size:
+          type: integer
+          example: 10
+        totalPages:
+          type: integer
+          example: 10
+        totalElements:
+          type: integer
+          example: 100
+        first:
+          type: boolean
+          example: true
+        last:
+          type: boolean
+          example: true
+
+    PremiumV1:
+      description: Represents a subscription premium available in the app
+      type: object
+      example:
+        id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        name: "Premium Subscription"
+        description: "Access to premium features"
+        type: "monthly"
+        prices:
+          - currency: USD
+            quantity: 9.99
+          - currency: EUR
+            quantity: 8.99
+        createdAt: "2023-10-01T00:00:00Z"
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the premium
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        name:
+          type: string
+          description: Name of the premium subscription
+          readOnly: true
+        description:
+          type: string
+          description: Detailed description of the premium subscription
+          readOnly: true
+        type:
+          type: string
+          description: Type of the premium (e.g., monthly, yearly)
+          enum:
+            - monthly
+            - yearly
+            - lifetime
+          readOnly: true
+        prices:
+          type: array
+          description: List of prices for the premium subscription in different currencies
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/PriceV1"
+          readOnly: true
+        createdAt:
+          type: string
+          format: date-time
+          description: Timestamp when the premium was created
+          readOnly: true
+      required:
+        - id
+        - name
+        - description
+        - type
+        - prices
+
+    PremiumPageV1:
+      description: Page of premium subscriptions
+      example:
+        number: 0
+        size: 2
+        totalPages: 1
+        totalElements: 2
+        first: true
+        last: true
+        content:
+          - id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            name: "Premium Subscription"
+            description: "Access to premium features"
+            type: "monthly"
+            prices:
+              - currency: USD
+                quantity: 9.99
+              - currency: EUR
+                quantity: 8.99
+            createdAt: "2023-10-01T00:00:00Z"
+          - id: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            name: "Yearly Premium Subscription"
+            description: "Access to premium features for a year"
+            type: "yearly"
+            prices:
+              - currency: USD
+                quantity: 99.99
+              - currency: EUR
+                quantity: 89.99
+            createdAt: "2023-10-01T00:00:00Z"
+      allOf:
+        - $ref: "#/components/schemas/PageV1"
+        - type: object
+          required:
+            - content
+          properties:
+            content:
+              type: array
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/PremiumV1"
+
+    PriceV1:
+      description: Represents a price for a premium subscription in a specific currency
+      type: object
+      example:
+        currency: USD
+        amount: 9.99
+      properties:
+        currency:
+          $ref: "#/components/schemas/CurrencyV1"
+        amount:
+          type: number
+          format: float
+          description: Price amount in the specified currency
+      required:
+        - currency
+        - amount
+
+    ProblemDetailV1:
+      description: A Problem Details object (RFC 9457)
+      example:
+        type: https://breathtake.io/docs/validation-error
+        title: Bad Request
+        status: 400
+        detail: Validation failed
+        instance: /users/v1/
+        traceId: b0e7d7054ce9c38330b276114ccec036
+      properties:
+        title:
+          description: |
+            A short, human-readable summary of the problem type.
+            It SHOULD NOT change from occurrence to occurrence of the problem
+          example: Bad Request
+          minLength: 1
+          type: string
+        status:
+          description: The HTTP status code generated by the origin server for this occurrence of the problem.
+          example: 400
+          exclusiveMaximum: true
+          format: int32
+          minimum: 400
+          maximum: 600
+          type: integer
+        detail:
+          description: A human-readable explanation specific to this occurrence of the problem.
+          example: Validation failed
+          minLength: 1
+          type: string
+        instance:
+          description: A URI reference that identifies the specific occurrence of the problem.
+          example: /users/v1/
+          minLength: 1
+          type: string
+        traceId:
+          type: string
+          minLength: 1
+          description: Trace ID generated by the service in OpenTelemetry format
+          example: b0e7d7054ce9c38330b276114ccec036
+        type:
+          type: string
+          minLength: 1
+          description: |
+            A URI reference RFC3986 that identifies the problem type. This specification encourages that,
+            when dereferenced, it provide human-readable documentation for the problem type
+            (e.g., using HTML [W3C.REC-html5-20141028]). When type cannot be presented as URI, its value should
+            be "about:blank".
+          example: https://breathtake.io/docs/validation-error
+        # Use this attribute, when you need to add additional properties to the problem detail like an array of error messages
+        additionalProperties:
+          type: object
+          description: Additional unstructured data that can be filled in by the service
+      required:
+        - detail
+        - instance
+        - status
+        - title
+        - type
+        - traceId
+      type: object
+
+    RewardV1:
+      description: Generic reward data
+      type: object
+      example:
+        id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        type: "coins"
+        name: "Oxis"
+        description: "Oxis coins"
+        value: 100
+        icon_link: "https://example.com/icon.png"
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the reward
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        type:
+          $ref: "#/components/schemas/RewardTypeV1"
+        name:
+          type: string
+          description: Name of the reward
+          readOnly: true
+        description:
+          type: string
+          description: Detailed description of the reward
+          readOnly: true
+        value:
+          type: number
+          description: Value or amount associated with the reward
+          readOnly: true
+        icon_link:
+          type: string
+          format: uri
+          description: Link to the reward's icon
+          readOnly: true
+      required:
+        - id
+        - type
+        - name
+        - value
+
+    RewardTypeV1:
+      description: Types of rewards available in the app
+      type: string
+      example: coins
+      enum:
+        - coins
+
+    SessionDataV1:
+      description: Detailed data of a breathing session
+      type: object
+      example:
+        inhalesCount: 10
+        exhalesCount: 8
+        holdCount: 5
+        inhalesTotalSeconds: 120.5
+        exhalesTotalSeconds: 100.0
+        holdTotalSeconds: 30.0
+        maxInhaleLengthSeconds: 5.0
+        maxExhaleLengthSeconds: 8.5
+        maxHoldLengthSeconds: 3.0
+      properties:
+        inhalesCount:
+          type: integer
+          format: int32
+        exhalesCount:
+          type: integer
+          format: int32
+        holdCount:
+          type: integer
+          format: int32
+        inhalesTotalSeconds:
+          type: number
+          format: float
+        exhalesTotalSeconds:
+          type: number
+          format: float
+        holdTotalSeconds:
+          type: number
+          format: float
+        maxInhaleLengthSeconds:
+          type: number
+          format: float
+        maxExhaleLengthSeconds:
+          type: number
+          format: float
+        maxHoldLengthSeconds:
+          type: number
+          format: float
+      required:
+        - inhalesCount
+        - exhalesCount
+        - holdCount
+        - inhalesTotalSeconds
+        - exhalesTotalSeconds
+        - holdTotalSeconds
+        - maxInhaleLengthSeconds
+        - maxExhaleLengthSeconds
+        - maxHoldLengthSeconds
+
+    SessionPageV1:
+      description: Page of breathing sessions
+      example:
+        number: 0
+        size: 2
+        totalPages: 1
+        totalElements: 2
+        first: true
+        last: true
+        content:
+          - protocolName: "Deep Breathing"
+            durationSeconds: 300
+            timestamp: "2023-10-01T00:00:00Z"
+            aiSummary:
+              rating: 96
+            data:
+              inhalesCount: 10
+              exhalesCount: 8
+              holdCount: 5
+              inhalesTotalSeconds: 120.5
+              exhalesTotalSeconds: 100.0
+              holdTotalSeconds: 30.0
+              maxInhaleLengthSeconds: 5.0
+              maxExhaleLengthSeconds: 8.5
+              maxHoldLengthSeconds: 3.0
+            rewards:
+              - id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+                type: coins
+                name: Oxis
+                description: Oxis coins
+                value: 100
+                icon_link: https://example.com/icon.png
+            dataStreamLink: https://example.com/data-stream-link
+          - protocolName: "Calm Breathing"
+            durationSeconds: 600
+            timestamp: "2023-10-02T00:00:00Z"
+            aiSummary:
+              rating: 90
+            data:
+              inhalesCount: 12
+              exhalesCount: 10
+              holdCount: 6
+              inhalesTotalSeconds: 150.0
+              exhalesTotalSeconds: 120.0
+              holdTotalSeconds: 40.0
+              maxInhaleLengthSeconds: 6.0
+              maxExhaleLengthSeconds: 9.0
+              maxHoldLengthSeconds: 4.0
+            rewards:
+              - id: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+                type: coins
+                name: Oxis Gold
+                description: Oxis gold coins
+                value: 200
+                icon_link: https://example.com/icon2.png
+      allOf:
+        - $ref: "#/components/schemas/PageV1"
+        - type: object
+          required:
+            - content
+          properties:
+            content:
+              type: array
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/SessionV1"
+
+    SessionV1:
+      description: Breathing session result
+      type: object
+      example:
+        id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        protocolName: "Deep Breathing"
+        durationSeconds: 300
+        startTime: "2023-10-01T00:00:00Z"
+        endTime: "2023-10-01T00:05:00Z"
+        aiSummary:
+          rating: 96
+        data:
+          inhalesCount: 10
+          exhalesCount: 8
+          holdCount: 5
+          inhalesTotalSeconds: 120.5
+          exhalesTotalSeconds: 100.0
+          holdTotalSeconds: 30.0
+          maxInhaleLengthSeconds: 5.0
+          maxExhaleLengthSeconds: 8.5
+          maxHoldLengthSeconds: 3.0
+        rewards:
+          - id: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            type: coins
+            name: Oxis
+            description: Oxis coins
+            value: 100
+            icon_link: https://example.com/icon.png
+        dataStreamLink: https://example.com/data-stream-link
+      properties:
+        id:
+          type: string
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          description: Unique identifier for the session
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        userId:
+          type: string
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+            description: Unique identifier of the user
+            example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        protocolName:
+          type: string
+        durationSeconds:
+          type: integer
+          format: int32
+        startTime:
+          type: string
+          format: date-time
+          description: Session start time
+        endTime:
+          type: string
+          format: date-time
+          description: Session end time
+        aiSummary:
+          $ref: "#/components/schemas/AISummaryV1"
+        data:
+          $ref: "#/components/schemas/SessionDataV1"
+        rewards:
+          type: array
+          items:
+            $ref: "#/components/schemas/RewardV1"
+          readOnly: true
+        dataStreamLink:
+          type: string
+          format: uri
+          description: Link to the bucket with raw session data
+      required:
+        [
+          userId,
+          protocolName,
+          durationSeconds,
+          startTime,
+          endTime,
+          data,
+          aiSummary,
+          dataStreamLink,
+        ]
+
+    UserAchievementV1:
+      description: Tracks which achievements a user has unlocked and when
+      type: object
+      example:
+        userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        achievementId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        unlockedAt: "2023-10-01T00:00:00Z"
+      properties:
+        userId:
+          type: string
+          description: Unique identifier of the user
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        achievementId:
+          type: string
+          description: Unique identifier of the achievement
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        unlockedAt:
+          type: string
+          format: date-time
+          description: Timestamp when the user unlocked the achievement
+          readOnly: true
+      required:
+        - userId
+        - achievementId
+        - unlockedAt
+
+    UserAchievementPageV1:
+      description: Page of user achievements
+      example:
+        number: 0
+        size: 2
+        totalPages: 1
+        totalElements: 2
+        first: true
+        last: true
+        content:
+          - userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            achievementId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            unlockedAt: "2023-10-01T00:00:00Z"
+          - userId: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            achievementId: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            unlockedAt: "2023-10-02T00:00:00Z"
+      allOf:
+        - $ref: "#/components/schemas/PageV1"
+        - type: object
+          required:
+            - content
+          properties:
+            content:
+              type: array
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/UserAchievementV1"
+
+    UserPersonalBestResultsV1:
+      description: Best results of the user
+      type: object
+      example:
+        userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        maxExhaleLengthSeconds: 30.5
+        maxHoldLengthSeconds: 95.2
+        maxStreakDays: 10
+        currentStreakDays: 5
+      properties:
+        userId:
+          type: string
+          description: Unique identifier of the user
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        maxExhaleLengthSeconds:
+          type: number
+          format: float
+          description: Maximum length of exhale in seconds
+          readOnly: true
+        maxHoldLengthSeconds:
+          type: number
+          format: float
+          description: Maximum length of hold in seconds
+          readOnly: true
+        maxStreakDays:
+          type: integer
+          format: int32
+          description: Maximum streak days
+          readOnly: true
+        currentStreakDays:
+          type: integer
+          format: int32
+          description: Current streak days
+          readOnly: true
+      required:
+        - userId
+        - maxExhaleLengthSeconds
+        - maxHoldLengthSeconds
+        - maxStreakDays
+        - currentStreakDays
+
+    UserPremiumV1:
+      description: Tracks the premium subscription a user has purchased and its details
+      type: object
+      example:
+        userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        premiumId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        activatedAt: "2023-10-01T00:00:00Z"
+        expiresAt: "2024-10-01T00:00:00Z"
+        status: active
+        paymentMethod: applePay
+        transactionId: "txn_1234567890"
+        autoRenew: true
+      properties:
+        userId:
+          type: string
+          description: Unique identifier of the user
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        premiumId:
+          type: string
+          description: Unique identifier of the premium subscription
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+          readOnly: true
+        activatedAt:
+          type: string
+          format: date-time
+          description: Timestamp when the premium subscription was activated
+          readOnly: true
+        expiresAt:
+          type: string
+          format: date-time
+          description: Timestamp when the premium subscription expires
+          readOnly: true
+        status:
+          type: string
+          description: Status of the premium subscription (e.g., active, expired, canceled)
+          enum:
+            - active
+            - expired
+            - canceled
+          readOnly: true
+        paymentMethod:
+          type: string
+          description: Payment method used for the subscription (e.g., credit card, PayPal)
+          readOnly: true
+        transactionId:
+          type: string
+          description: Unique identifier of the transaction for the purchase
+          readOnly: true
+        autoRenew:
+          type: boolean
+          description: Indicates if the subscription is set to auto-renew
+      required:
+        - userId
+        - premiumId
+        - activatedAt
+        - status
+
+    UserPremiumPageV1:
+      description: Page of user premium subscriptions
+      example:
+        number: 0
+        size: 2
+        totalPages: 1
+        totalElements: 2
+        first: true
+        last: true
+        content:
+          - userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            premiumId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            activatedAt: "2023-10-01T00:00:00Z"
+            expiresAt: "2024-10-01T00:00:00Z"
+            status: active
+            paymentMethod: applePay
+            transactionId: "txn_1234567890"
+            autoRenew: true
+          - userId: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            premiumId: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            activatedAt: "2023-10-02T00:00:00Z"
+            expiresAt: "2024-10-02T00:00:00Z"
+            status: expired
+            paymentMethod: creditCard
+            transactionId: "txn_0987654321"
+            autoRenew: false
+      allOf:
+        - $ref: "#/components/schemas/PageV1"
+        - type: object
+          required:
+            - content
+          properties:
+            content:
+              type: array
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/UserPremiumV1"
+
+    UserProfileV1:
+      description: User profile data
+      type: object
+      example:
+        userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        username: "johndoe"
+        email: "john.theexample@proton.me"
+      properties:
+        userId:
+          type: string
+          readOnly: true
+          description: Unique identifier of the user
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        username:
+          type: string
+          description: Username of the user
+        email:
+          type: string
+          format: email
+          description: Email address of the user
+      required: [username]
+
+    UserSignedDocumentV1:
+      description: Tracks which version of a document a user has signed and when
+      type: object
+      example:
+        userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        documentId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        signedVersion: "1.0.0"
+        signedAt: "2023-10-01T00:00:00Z"
+      properties:
+        userId:
+          type: string
+          readOnly: true
+          description: Unique identifier of the user
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+        documentId:
+          type: string
+          format: ulid
+          x-go-type: ulid.ULID
+          x-go-type-import:
+            path: github.com/oklog/ulid/v2
+            name: ulid
+          description: Unique identifier of the document
+          example: "0000XSNJG0MQJHBF4QX1EFD6Y5"
+        signedVersion:
+          type: string
+          description: Version of the document the user signed
+        signedAt:
+          type: string
+          format: date-time
+          description: Timestamp when the user signed the document
+          readOnly: true
+      required:
+        - documentId
+        - signedVersion
+        - signedAt
+
+    UserSignedDocumentPageV1:
+      description: Page of signed documents
+      example:
+        number: 0
+        size: 2
+        totalPages: 1
+        totalElements: 2
+        first: true
+        last: true
+        content:
+          - userId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            documentId: "0000XSNJG0MQJHBF4QX1EFD6Y3"
+            signedVersion: "1.0.0"
+            signedAt: "2023-10-01T00:00:00Z"
+          - userId: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            documentId: "0000XSNJG0MQJHBF4QX1EFD6Y4"
+            signedVersion: "1.0.0"
+            signedAt: "2023-10-02T00:00:00Z"
+      allOf:
+        - $ref: "#/components/schemas/PageV1"
+        - type: object
+          required:
+            - content
+          properties:
+            content:
+              type: array
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/UserSignedDocumentV1"
+
+  securitySchemes:
+    jwt:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: |
+        Authentication for Cloud Run and App:
+        - The `Authorization` header must contain a Google Cloud IAM identity token (for Cloud Run access).
+        - The `X-Firebase-Auth` header must contain a Firebase ID token (for app-level authentication).
+        - Example:
+          ```
+          curl -H "Authorization: Bearer $(gcloud auth print-identity-token)" \
+               -H "X-Firebase-Auth: <FIREBASE_ID_TOKEN>" \
+               https://<backend-url>
+          ```
+        - The backend will validate the Firebase token from `X-Firebase-Auth`.

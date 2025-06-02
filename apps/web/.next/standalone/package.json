@@ -1,0 +1,59 @@
+{
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@lingui/cli": "^5.3.1",
+    "@lingui/core": "^5.3.1",
+    "@lingui/react": "^5.3.1",
+    "@reduxjs/toolkit": "^2.7.0",
+    "@segment/analytics-next": "^1.81.0",
+    "@stripe/stripe-js": "^7.3.0",
+    "firebase": "^11.8.1",
+    "make-plural": "^7.4.0",
+    "react-onesignal": "^3.2.2",
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0",
+    "stripe": "^18.1.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@lingui/macro": "5.3.1",
+    "@netlify/plugin-nextjs": "^5.11.2",
+    "@svgr/webpack": "^8.1.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.7",
+    "@types/cacheable-request": "^8.3.6",
+    "@types/jest": "^29.5.14",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.5.1",
+    "ts-jest": "^29.3.2",
+    "turbo": "^2.4.2",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "name": "shadcn-ui-monorepo",
+  "packageManager": "pnpm@10.4.1",
+  "private": true,
+  "scripts": {
+    "build": "turbo build && pnpm web:build",
+    "dev": "turbo dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo lint",
+    "web:build": "turbo build --filter=web",
+    "lingui": "pnpm lingui:extract && pnpm lingui:compile",
+    "lingui:compile": "lingui compile",
+    "lingui:extract": "lingui extract --clean",
+    "test": "jest"
+  },
+  "version": "0.0.1"
+}
