@@ -3,8 +3,8 @@
   publish = ".next"
   command = "pnpm build"
 
-[functions]
-  directory = "../../netlify/functions"
+[[plugins]]
+package = "@netlify/plugin-nextjs"
 
 [build.environment]
   NEXT_PUBLIC_FIREBASE_API_KEY = AIzaSyCJTSf_aQY1DFrlKO4HjPz5svShJ8Vjtok
