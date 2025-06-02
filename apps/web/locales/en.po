@@ -1,0 +1,1204 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-03-25 20:20+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: apps/web/app/components/home/testimonials.tsx:100
+msgid "\"As a meditation teacher, I'm always looking for new tools to recommend to my students. Breathtake's combination of traditional techniques and modern technology is truly innovative.\""
+msgstr "\"As a meditation teacher, I'm always looking for new tools to recommend to my students. Breathtake's combination of traditional techniques and modern technology is truly innovative.\""
+
+#: apps/web/app/components/home/testimonials.tsx:36
+msgid "\"As a professional athlete, I need every advantage I can get. Breathtake's real-time feedback and personalized sessions have significantly improved my performance and recovery times.\""
+msgstr "\"As a professional athlete, I need every advantage I can get. Breathtake's real-time feedback and personalized sessions have significantly improved my performance and recovery times.\""
+
+#: apps/web/app/components/home/testimonials.tsx:20
+msgid "\"Breathtake has completely transformed my daily routine. The AI-guided sessions are incredibly effective at reducing my stress levels. I've never felt more in control of my breathing and overall well-being.\""
+msgstr "\"Breathtake has completely transformed my daily routine. The AI-guided sessions are incredibly effective at reducing my stress levels. I've never felt more in control of my breathing and overall well-being.\""
+
+#: apps/web/app/components/home/testimonials.tsx:68
+msgid "\"I was skeptical at first, but the scientific research backing Breathtake convinced me to try it. The results have been amazing - better sleep, more focus, and reduced stress levels.\""
+msgstr "\"I was skeptical at first, but the scientific research backing Breathtake convinced me to try it. The results have been amazing - better sleep, more focus, and reduced stress levels.\""
+
+#: apps/web/app/components/home/testimonials.tsx:52
+msgid "\"The premium content library is worth every penny. The medical expert insights and clinical protocols have helped me better understand and manage my anxiety. Highly recommended!\""
+msgstr "\"The premium content library is worth every penny. The medical expert insights and clinical protocols have helped me better understand and manage my anxiety. Highly recommended!\""
+
+#: apps/web/app/components/home/testimonials.tsx:84
+msgid "\"The self-paced approach is perfect for my busy schedule. I love being able to customize my sessions and track my progress over time. It's become an essential part of my daily routine.\""
+msgstr "\"The self-paced approach is perfect for my busy schedule. I love being able to customize my sessions and track my progress over time. It's become an essential part of my daily routine.\""
+
+#. placeholder {0}: new Date().getFullYear()
+#: apps/web/app/components/home/footer.tsx:169
+msgid "© {0} Breathtake. All rights reserved."
+msgstr "© {0} Breathtake. All rights reserved."
+
+#: apps/web/app/social/page.tsx:78
+msgid "30-Day Mindful Breathing Challenge"
+msgstr "30-Day Mindful Breathing Challenge"
+
+#: apps/web/app/components/home/footer.tsx:136
+msgid "About Us"
+msgstr "About Us"
+
+#: apps/web/app/components/home/features-grid.tsx:33
+msgid "Access a growing library of guided meditations, breathing techniques, and mindfulness exercises."
+msgstr "Access a growing library of guided meditations, breathing techniques, and mindfulness exercises."
+
+#: apps/web/app/membership/page.tsx:447
+msgid "Access exclusive breathing techniques and guided sessions"
+msgstr "Access exclusive breathing techniques and guided sessions"
+
+#: apps/web/app/components/home/explore-more.tsx:51
+msgid "Access free guides, worksheets, and tools to enhance your breathing practice."
+msgstr "Access free guides, worksheets, and tools to enhance your breathing practice."
+
+#: apps/web/app/components/home/premium-content.tsx:32
+msgid "Access to peer-reviewed studies, clinical trials, and breakthrough research on breathing techniques"
+msgstr "Access to peer-reviewed studies, clinical trials, and breakthrough research on breathing techniques"
+
+#: apps/web/app/membership/page.tsx:445
+msgid "Advanced Exercises"
+msgstr "Advanced Exercises"
+
+#: apps/web/app/components/home/how-it-works.tsx:28
+msgid "AI automatically generates custom breathing exercises tailored to your current state and goals."
+msgstr "AI automatically generates custom breathing exercises tailored to your current state and goals."
+
+#: apps/web/app/components/home/how-it-works.tsx:46
+msgid "AI monitors your improvement and automatically adjusts future sessions for better outcomes."
+msgstr "AI monitors your improvement and automatically adjusts future sessions for better outcomes."
+
+#: apps/web/app/membership/page.tsx:419
+msgid "AI-Powered Insights"
+msgstr "AI-Powered Insights"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:264
+msgid "Aim for equal inhale and exhale durations."
+msgstr "Aim for equal inhale and exhale durations."
+
+#: apps/web/app/components/home/premium-content.tsx:39
+msgid "Ambassador Stories"
+msgstr "Ambassador Stories"
+
+#: apps/web/app/settings/page.tsx:248
+msgid "Analytics"
+msgstr "Analytics"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:31
+msgid "Analyze your breathing rhythm"
+msgstr "Analyze your breathing rhythm"
+
+#: apps/web/app/settings/page.tsx:189
+msgid "App Icon"
+msgstr "App Icon"
+
+#: apps/web/app/settings/page.tsx:160
+msgid "App Preferences"
+msgstr "App Preferences"
+
+#: apps/web/components/session-controls/session-controls.tsx:105
+msgid "Are you sure you want to stop? Your progress will be saved."
+msgstr "Are you sure you want to stop? Your progress will be saved."
+
+#: apps/web/app/components/home/trusted-by.tsx:45
+msgid "Athletes and coaches"
+msgstr "Athletes and coaches"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:402
+msgid "Average Confidence"
+msgstr "Average Confidence"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:406
+msgid "Average Inference Time"
+msgstr "Average Inference Time"
+
+#: apps/web/app/settings/page.tsx:201
+msgid "Background"
+msgstr "Background"
+
+#: apps/web/app/settings/page.tsx:213
+msgid "Background Music"
+msgstr "Background Music"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:135
+#: apps/web/components/session-analytics/anayltics-help.tsx:384
+msgid "Best Minute"
+msgstr "Best Minute"
+
+#: apps/web/app/components/home/gallery-section.tsx:40
+msgid "Better Sleep"
+msgstr "Better Sleep"
+
+#: apps/web/app/membership/page.tsx:240
+msgid "Billing History"
+msgstr "Billing History"
+
+#: apps/web/app/components/home/footer.tsx:97
+#: apps/web/app/components/home/explore-more.tsx:13
+msgid "Blog"
+msgstr "Blog"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:58
+#: apps/web/components/session-analytics/anayltics-help.tsx:326
+msgid "BPM"
+msgstr "BPM"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:96
+#: apps/web/components/session-analytics/anayltics-help.tsx:334
+msgid "Breath Pattern"
+msgstr "Breath Pattern"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:70
+#: apps/web/components/session-analytics/anayltics-help.tsx:362
+msgid "Breath Score"
+msgstr "Breath Score"
+
+#: apps/web/components/phase-text/phase-text.tsx:13
+msgid "Breathe in…"
+msgstr "Breathe in…"
+
+#: apps/web/components/phase-text/phase-text.tsx:15
+msgid "Breathe out…"
+msgstr "Breathe out…"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:99
+#: apps/web/components/session-analytics/anayltics-help.tsx:336
+msgid "Breathing"
+msgstr "Breathing"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:186
+msgid "Breathing Efficiency"
+msgstr "Breathing Efficiency"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:30
+msgid "Breathing Patterns"
+msgstr "Breathing Patterns"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:54
+#: apps/web/components/session-analytics/anayltics-help.tsx:324
+msgid "Breathing Rate"
+msgstr "Breathing Rate"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:194
+msgid "Breaths/Min"
+msgstr "Breaths/Min"
+
+#: apps/web/app/components/home/footer.tsx:17
+msgid "Breathtake"
+msgstr "Breathtake"
+
+#: apps/web/app/components/home/our-story.tsx:12
+msgid "Breathtake was born from a simple observation: while breathing is fundamental to life, most of us don't breathe optimally. Our journey began when our founder, a former professional athlete, discovered the transformative power of proper breathing techniques during recovery from a career-ending injury."
+msgstr "Breathtake was born from a simple observation: while breathing is fundamental to life, most of us don't breathe optimally. Our journey began when our founder, a former professional athlete, discovered the transformative power of proper breathing techniques during recovery from a career-ending injury."
+
+#: apps/web/app/components/home/gallery-section.tsx:7
+msgid "BreathTAKING Gallery"
+msgstr "BreathTAKING Gallery"
+
+#: apps/web/app/social/page.tsx:58
+msgid "Buddies"
+msgstr "Buddies"
+
+#: apps/web/app/components/home/trusted-by.tsx:103
+msgid "Business"
+msgstr "Business"
+
+#: apps/web/app/social/page.tsx:109
+msgid "Calm Breathing Collective"
+msgstr "Calm Breathing Collective"
+
+#: apps/web/app/components/home/gallery-section.tsx:14
+msgid "Calm your mind"
+msgstr "Calm your mind"
+
+#: apps/web/app/membership/page.tsx:476
+msgid "Can I change my plan later?"
+msgstr "Can I change my plan later?"
+
+#: apps/web/components/session-controls/session-controls.tsx:113
+msgid "Cancel"
+msgstr "Cancel"
+
+#: apps/web/app/components/home/footer.tsx:144
+msgid "Careers"
+msgstr "Careers"
+
+#: apps/web/app/social/page.tsx:46
+msgid "Challenges"
+msgstr "Challenges"
+
+#: apps/web/app/settings/page.tsx:195
+#: apps/web/app/settings/page.tsx:207
+msgid "Change"
+msgstr "Change"
+
+#: apps/web/app/membership/page.tsx:180
+msgid "Change Plan"
+msgstr "Change Plan"
+
+#: apps/web/app/membership/page.tsx:341
+msgid "Choose Your Plan"
+msgstr "Choose Your Plan"
+
+#: apps/web/app/components/home/how-it-works.tsx:58
+msgid "Choose Your Practice"
+msgstr "Choose Your Practice"
+
+#: apps/web/app/settings/page.tsx:166
+msgid "Choose your preferred color scheme"
+msgstr "Choose your preferred color scheme"
+
+#: apps/web/app/components/home/premium-content.tsx:48
+msgid "Clinical Protocols"
+msgstr "Clinical Protocols"
+
+#: apps/web/app/settings/page.tsx:164
+msgid "Colour Scheme"
+msgstr "Colour Scheme"
+
+#: apps/web/app/components/home/explore-more.tsx:37
+msgid "Community"
+msgstr "Community"
+
+#: apps/web/app/components/home/footer.tsx:129
+msgid "Company"
+msgstr "Company"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:157
+msgid "Confidence"
+msgstr "Confidence"
+
+#: apps/web/app/social/page.tsx:134
+msgid "Connect with breathing buddies and"
+msgstr "Connect with breathing buddies and"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:272
+msgid "Consider adding brief holds between breaths."
+msgstr "Consider adding brief holds between breaths."
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:221
+msgid "Consider adjusting your breathing pace"
+msgstr "Consider adjusting your breathing pace"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:390
+msgid "Consistency Score"
+msgstr "Consistency Score"
+
+#: apps/web/app/components/home/footer.tsx:152
+msgid "Contact"
+msgstr "Contact"
+
+#: apps/web/app/components/home/premium-content.tsx:76
+msgid "Content Preview"
+msgstr "Content Preview"
+
+#: apps/web/app/components/home/footer.tsx:179
+msgid "Cookie Policy"
+msgstr "Cookie Policy"
+
+#: apps/web/app/signup/page.tsx:11
+msgid "Create an account"
+msgstr "Create an account"
+
+#: apps/web/components/session-header/session-header.tsx:172
+msgid "Current breathing protocol loaded"
+msgstr "Current breathing protocol loaded"
+
+#: apps/web/app/components/home/how-it-works.tsx:70
+msgid "Customize session duration, breathing rhythm, and guidance level to match your preferences."
+msgstr "Customize session duration, breathing rhythm, and guidance level to match your preferences."
+
+#: apps/web/app/settings/page.tsx:203
+msgid "Customize your app background"
+msgstr "Customize your app background"
+
+#: apps/web/app/settings/page.tsx:191
+msgid "Customize your app icon"
+msgstr "Customize your app icon"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:190
+msgid "Cycle Time"
+msgstr "Cycle Time"
+
+#: apps/web/app/social/page.tsx:85
+msgid "Daily Goal"
+msgstr "Daily Goal"
+
+#: apps/web/app/components/home/trusted-by.tsx:107
+msgid "David Kim, Tech CEO"
+msgstr "David Kim, Tech CEO"
+
+#: apps/web/app/sessions/page.tsx:28
+msgid "Delete all"
+msgstr "Delete all"
+
+#: apps/web/app/components/home/explore-more.tsx:15
+msgid "Discover articles about breathing techniques, wellness tips, and the latest research in respiratory health."
+msgstr "Discover articles about breathing techniques, wellness tips, and the latest research in respiratory health."
+
+#: apps/web/app/components/home/trusted-by.tsx:19
+msgid "Doctors and healthcare providers"
+msgstr "Doctors and healthcare providers"
+
+#: apps/web/app/components/home/explore-more.tsx:54
+msgid "Download Resources"
+msgstr "Download Resources"
+
+#: apps/web/app/components/home/premium-content.tsx:68
+msgid "Downloadable medical guides, breathing assessment tools, and progress tracking templates"
+msgstr "Downloadable medical guides, breathing assessment tools, and progress tracking templates"
+
+#: apps/web/app/components/home/trusted-by.tsx:22
+msgid "Dr. Sarah Chen, Pulmonologist"
+msgstr "Dr. Sarah Chen, Pulmonologist"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:131
+msgid "Duration"
+msgstr "Duration"
+
+#: apps/web/app/components/home/trust-indicators.tsx:31
+msgid "Easy-to-follow personalized instruments with built-in guidance"
+msgstr "Easy-to-follow personalized instruments with built-in guidance"
+
+#: apps/web/app/components/home/features-grid.tsx:11
+msgid "Easy-to-Follow Sessions"
+msgstr "Easy-to-Follow Sessions"
+
+#: apps/web/app/components/home/trusted-by.tsx:74
+msgid "Emma Thompson, Mindfulness Coach"
+msgstr "Emma Thompson, Mindfulness Coach"
+
+#: apps/web/app/settings/page.tsx:230
+msgid "Enable voice guidance during breathing exercises"
+msgstr "Enable voice guidance during breathing exercises"
+
+#: apps/web/components/session-controls/session-controls.tsx:103
+msgid "End session?"
+msgstr "End session?"
+
+#: apps/web/app/components/home/gallery-section.tsx:32
+msgid "Enhance concentration"
+msgstr "Enhance concentration"
+
+#: apps/web/app/components/home/testimonials.tsx:87
+msgid "Entrepreneur"
+msgstr "Entrepreneur"
+
+#: apps/web/app/sessions/page.tsx:45
+msgid "events"
+msgstr "events"
+
+#: apps/web/app/components/home/explore-more.tsx:61
+msgid "Events"
+msgstr "Events"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:84
+#: apps/web/components/session-analytics/anayltics-help.tsx:366
+msgid "Excellent session!"
+msgstr "Excellent session!"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:260
+msgid "Excellent! You're in the coherent breathing zone."
+msgstr "Excellent! You're in the coherent breathing zone."
+
+#: apps/web/app/components/home/premium-content.tsx:23
+msgid "Exclusive articles and video sessions from leading pulmonologists, cardiologists, and respiratory therapists"
+msgstr "Exclusive articles and video sessions from leading pulmonologists, cardiologists, and respiratory therapists"
+
+#: apps/web/app/components/home/trusted-by.tsx:104
+msgid "Executives and teams"
+msgstr "Executives and teams"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:107
+#: apps/web/components/session-analytics/anayltics-help.tsx:347
+#: apps/web/components/breath-circle/breath-circle.tsx:128
+#: apps/web/components/breath-circle/breath-circle.tsx:142
+msgid "Exhale"
+msgstr "Exhale"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:109
+#: apps/web/components/session-analytics/anayltics-help.tsx:350
+msgid "Exhale Hold"
+msgstr "Exhale Hold"
+
+#: apps/web/app/components/home/explore-more.tsx:8
+msgid "Explore More"
+msgstr "Explore More"
+
+#: apps/web/app/components/home/explore-more.tsx:27
+msgid "Explore scientific studies and clinical trials that validate the effectiveness of breathing exercises."
+msgstr "Explore scientific studies and clinical trials that validate the effectiveness of breathing exercises."
+
+#: apps/web/app/components/home/footer.tsx:58
+msgid "Features"
+msgstr "Features"
+
+#: apps/web/app/social/page.tsx:150
+msgid "Find Breathing Buddies"
+msgstr "Find Breathing Buddies"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:209
+msgid "Flow Rate"
+msgstr "Flow Rate"
+
+#: apps/web/app/components/home/gallery-section.tsx:31
+msgid "Focus & Productivity"
+msgstr "Focus & Productivity"
+
+#: apps/web/app/components/home/how-it-works.tsx:76
+msgid "Follow Along"
+msgstr "Follow Along"
+
+#: apps/web/app/membership/page.tsx:471
+msgid "Frequently Asked Questions"
+msgstr "Frequently Asked Questions"
+
+#: apps/web/app/settings/page.tsx:49
+msgid "General"
+msgstr "General"
+
+#: apps/web/app/components/home/explore-more.tsx:75
+msgid "Get help with your breathing practice, technical support, or general inquiries."
+msgstr "Get help with your breathing practice, technical support, or general inquiries."
+
+#: apps/web/app/components/home/how-it-works.tsx:37
+msgid "Get instant feedback and adjustments during your session for optimal results."
+msgstr "Get instant feedback and adjustments during your session for optimal results."
+
+#: apps/web/app/membership/page.tsx:421
+msgid "Get personalized recommendations based on your breathing patterns"
+msgstr "Get personalized recommendations based on your breathing patterns"
+
+#: apps/web/app/components/home/explore-more.tsx:78
+msgid "Get Support"
+msgstr "Get Support"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:271
+msgid "Good breath holds!"
+msgstr "Good breath holds!"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:86
+#: apps/web/components/session-analytics/anayltics-help.tsx:368
+msgid "Good session, keep practicing!"
+msgstr "Good session, keep practicing!"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:263
+msgid "Great breathing pattern!"
+msgstr "Great breathing pattern!"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:267
+msgid "Great consistency in your breathing pattern!"
+msgstr "Great consistency in your breathing pattern!"
+
+#: apps/web/app/social/page.tsx:89
+msgid "Group Minutes"
+msgstr "Group Minutes"
+
+#: apps/web/app/social/page.tsx:52
+msgid "Groups"
+msgstr "Groups"
+
+#: apps/web/app/components/home/footer.tsx:113
+msgid "Guides"
+msgstr "Guides"
+
+#: apps/web/app/membership/page.tsx:432
+msgid "Health Tracking"
+msgstr "Health Tracking"
+
+#: apps/web/app/components/home/testimonials.tsx:55
+msgid "Healthcare Professional"
+msgstr "Healthcare Professional"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:21
+msgid "Heart Rate Variability"
+msgstr "Heart Rate Variability"
+
+#: apps/web/app/components/home/footer.tsx:121
+msgid "Help Center"
+msgstr "Help Center"
+
+#: apps/web/app/settings/page.tsx:250
+msgid "Help us improve by sharing anonymous usage data"
+msgstr "Help us improve by sharing anonymous usage data"
+
+#: apps/web/components/breath-circle/breath-circle.tsx:131
+#: apps/web/components/breath-circle/breath-circle.tsx:144
+msgid "Hold"
+msgstr "Hold"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:200
+msgid "Hold Ratio"
+msgstr "Hold Ratio"
+
+#: apps/web/components/phase-text/phase-text.tsx:16
+msgid "Hold…"
+msgstr "Hold…"
+
+#: apps/web/components/navigation/main-nav.tsx:42
+msgid "Home"
+msgstr "Home"
+
+#: apps/web/app/components/home/how-it-works.tsx:8
+msgid "How it Works"
+msgstr "How it Works"
+
+#: apps/web/app/settings/page.tsx:68
+msgid "Imperial"
+msgstr "Imperial"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:161
+msgid "Inference Time"
+msgstr "Inference Time"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:102
+#: apps/web/components/session-analytics/anayltics-help.tsx:340
+#: apps/web/components/breath-circle/breath-circle.tsx:126
+#: apps/web/components/breath-circle/breath-circle.tsx:140
+msgid "Inhale"
+msgstr "Inhale"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:104
+#: apps/web/components/session-analytics/anayltics-help.tsx:343
+msgid "Inhale Hold"
+msgstr "Inhale Hold"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:47
+msgid "Interactive Dashboard Demo"
+msgstr "Interactive Dashboard Demo"
+
+#: apps/web/app/membership/page.tsx:483
+msgid "Is there a free trial?"
+msgstr "Is there a free trial?"
+
+#: apps/web/app/components/home/trust-indicators.tsx:23
+msgid "Join 50,000+ users improving their well-being daily"
+msgstr "Join 50,000+ users improving their well-being daily"
+
+#: apps/web/app/components/home/explore-more.tsx:42
+msgid "Join Community"
+msgstr "Join Community"
+
+#: apps/web/app/social/page.tsx:123
+msgid "Join Group"
+msgstr "Join Group"
+
+#: apps/web/app/social/page.tsx:93
+msgid "Join now"
+msgstr "Join now"
+
+#: apps/web/app/components/home/explore-more.tsx:39
+msgid "Join our growing community of breathing enthusiasts, share experiences, and learn from others."
+msgstr "Join our growing community of breathing enthusiasts, share experiences, and learn from others."
+
+#: apps/web/app/components/home/explore-more.tsx:63
+msgid "Join our webinars, workshops, and live sessions with breathing experts."
+msgstr "Join our webinars, workshops, and live sessions with breathing experts."
+
+#: apps/web/app/components/home/final-cta.tsx:11
+msgid "Join thousands of users who have already discovered the power of proper breathing. Start your journey to better health and well-being today."
+msgstr "Join thousands of users who have already discovered the power of proper breathing. Start your journey to better health and well-being today."
+
+#: apps/web/app/membership/page.tsx:505
+msgid "Join thousands of users who have improved their well-being with Breathtake."
+msgstr "Join thousands of users who have improved their well-being with Breathtake."
+
+#: apps/web/app/signup/page.tsx:13
+msgid "Join us to get started with your journey"
+msgstr "Join us to get started with your journey"
+
+#: apps/web/app/components/home/how-it-works.tsx:88
+msgid "Keep a personal log of your sessions and note your mental and physical improvements."
+msgstr "Keep a personal log of your sessions and note your mental and physical improvements."
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:87
+#: apps/web/components/session-analytics/anayltics-help.tsx:369
+msgid "Keep working on your breathing technique."
+msgstr "Keep working on your breathing technique."
+
+#: apps/web/app/settings/page.tsx:103
+msgid "Language"
+msgstr "Language"
+
+#: apps/web/app/components/home/final-cta.tsx:19
+msgid "Learn More"
+msgstr "Learn More"
+
+#: apps/web/app/components/home/our-story.tsx:21
+msgid "Learn More About Us"
+msgstr "Learn More About Us"
+
+#: apps/web/components/navigation/main-nav.tsx:82
+msgid "Login"
+msgstr "Login"
+
+#: apps/web/app/membership/page.tsx:187
+msgid "Manage Subscription"
+msgstr "Manage Subscription"
+
+#: apps/web/app/membership/page.tsx:133
+msgid "Manage your subscription and access your premium features"
+msgstr "Manage your subscription and access your premium features"
+
+#: apps/web/app/components/home/trusted-by.tsx:18
+msgid "Medical"
+msgstr "Medical"
+
+#: apps/web/app/components/home/premium-content.tsx:21
+msgid "Medical Expert Insights"
+msgstr "Medical Expert Insights"
+
+#: apps/web/app/components/home/premium-content.tsx:66
+msgid "Medical Resources"
+msgstr "Medical Resources"
+
+#: apps/web/app/components/home/testimonials.tsx:103
+msgid "Meditation Teacher"
+msgstr "Meditation Teacher"
+
+#: apps/web/app/social/page.tsx:115
+msgid "Members"
+msgstr "Members"
+
+#: apps/web/app/settings/page.tsx:60
+msgid "Metric"
+msgstr "Metric"
+
+#: apps/web/app/components/home/trusted-by.tsx:48
+msgid "Michael Rodriguez, Olympic Coach"
+msgstr "Michael Rodriguez, Olympic Coach"
+
+#: apps/web/app/social/page.tsx:76
+msgid "Mindful Breathing Club"
+msgstr "Mindful Breathing Club"
+
+#: apps/web/app/social/page.tsx:110
+msgid "Mindfulness"
+msgstr "Mindfulness"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:381
+msgid "minutes"
+msgstr "minutes"
+
+#: apps/web/app/components/home/footer.tsx:82
+msgid "Mobile App"
+msgstr "Mobile App"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:153
+#: apps/web/components/session-analytics/anayltics-help.tsx:399
+msgid "Model Performance"
+msgstr "Model Performance"
+
+#: apps/web/app/settings/page.tsx:84
+msgid "Monday"
+msgstr "Monday"
+
+#: apps/web/app/membership/page.tsx:434
+msgid "Monitor your stress levels and heart rate variability"
+msgstr "Monitor your stress levels and heart rate variability"
+
+#: apps/web/app/settings/page.tsx:139
+msgid "Music"
+msgstr "Music"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:220
+msgid "Optimal breathing cycle duration"
+msgstr "Optimal breathing cycle duration"
+
+#: apps/web/app/components/home/gallery-section.tsx:23
+msgid "Optimize your training"
+msgstr "Optimize your training"
+
+#: apps/web/app/components/home/how-it-works.tsx:19
+msgid "Our AI analyzes your breathing patterns and stress levels in real-time using advanced biometric tracking."
+msgstr "Our AI analyzes your breathing patterns and stress levels in real-time using advanced biometric tracking."
+
+#: apps/web/app/components/home/our-story.tsx:10
+#: apps/web/app/components/home/our-story.tsx:28
+msgid "Our Story"
+msgstr "Our Story"
+
+#: apps/web/components/session-controls/session-controls.tsx:62
+msgid "Pause"
+msgstr "Pause"
+
+#: apps/web/app/components/home/features-grid.tsx:21
+msgid "Personal Growth Insights"
+msgstr "Personal Growth Insights"
+
+#: apps/web/app/components/home/features-grid.tsx:13
+msgid "Personalized breathing exercises tailored to your needs. Our built-in assistant makes it simple to start and maintain your practice."
+msgstr "Personalized breathing exercises tailored to your needs. Our built-in assistant makes it simple to start and maintain your practice."
+
+#: apps/web/app/components/home/how-it-works.tsx:25
+msgid "Personalized Sessions"
+msgstr "Personalized Sessions"
+
+#: apps/web/app/settings/page.tsx:215
+msgid "Play calming background music during sessions"
+msgstr "Play calming background music during sessions"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:165
+#: apps/web/components/session-analytics/anayltics-help.tsx:410
+msgid "Prediction Accuracy"
+msgstr "Prediction Accuracy"
+
+#: apps/web/app/components/home/footer.tsx:74
+#: apps/web/app/components/home/features-grid.tsx:31
+msgid "Premium Content"
+msgstr "Premium Content"
+
+#: apps/web/app/components/home/premium-content.tsx:16
+msgid "Premium Content Library"
+msgstr "Premium Content Library"
+
+#: apps/web/app/membership/page.tsx:410
+msgid "Premium Features"
+msgstr "Premium Features"
+
+#: apps/web/app/components/home/footer.tsx:160
+msgid "Press"
+msgstr "Press"
+
+#: apps/web/app/components/home/footer.tsx:66
+msgid "Pricing"
+msgstr "Pricing"
+
+#: apps/web/app/settings/page.tsx:244
+msgid "Privacy"
+msgstr "Privacy"
+
+#: apps/web/app/membership/page.tsx:458
+msgid "Privacy Focused"
+msgstr "Privacy Focused"
+
+#: apps/web/app/components/home/footer.tsx:173
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: apps/web/app/social/page.tsx:81
+msgid "Prize"
+msgstr "Prize"
+
+#: apps/web/app/components/home/footer.tsx:51
+msgid "Product"
+msgstr "Product"
+
+#: apps/web/app/components/home/testimonials.tsx:39
+msgid "Professional Athlete"
+msgstr "Professional Athlete"
+
+#: apps/web/app/components/home/how-it-works.tsx:43
+#: apps/web/app/components/home/dashboard-interface.tsx:39
+msgid "Progress Tracking"
+msgstr "Progress Tracking"
+
+#: apps/web/app/components/home/explore-more.tsx:18
+msgid "Read Articles"
+msgstr "Read Articles"
+
+#: apps/web/app/membership/page.tsx:502
+msgid "Ready to transform your breathing practice?"
+msgstr "Ready to transform your breathing practice?"
+
+#: apps/web/app/components/home/final-cta.tsx:9
+msgid "Ready to Transform Your Breathing?"
+msgstr "Ready to Transform Your Breathing?"
+
+#: apps/web/app/components/home/premium-content.tsx:59
+msgid "Real case studies and testimonials from users who improved their health through breathing"
+msgstr "Real case studies and testimonials from users who improved their health through breathing"
+
+#: apps/web/app/components/home/how-it-works.tsx:34
+msgid "Real-time Guidance"
+msgstr "Real-time Guidance"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:139
+msgid "Regularity"
+msgstr "Regularity"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:387
+msgid "Regularity Score"
+msgstr "Regularity Score"
+
+#: apps/web/app/components/home/footer.tsx:105
+#: apps/web/app/components/home/explore-more.tsx:25
+msgid "Research"
+msgstr "Research"
+
+#: apps/web/app/components/home/trust-indicators.tsx:13
+msgid "Research-Backed"
+msgstr "Research-Backed"
+
+#: apps/web/app/components/home/footer.tsx:90
+#: apps/web/app/components/home/explore-more.tsx:49
+msgid "Resources"
+msgstr "Resources"
+
+#: apps/web/app/components/home/gallery-section.tsx:41
+msgid "Rest and recover"
+msgstr "Rest and recover"
+
+#: apps/web/components/session-controls/session-controls.tsx:71
+msgid "Resume"
+msgstr "Resume"
+
+#: apps/web/app/sessions/page.tsx:22
+msgid "Saved Sessions"
+msgstr "Saved Sessions"
+
+#: apps/web/app/components/home/premium-content.tsx:30
+msgid "Scientific Research"
+msgstr "Scientific Research"
+
+#: apps/web/app/social/page.tsx:154
+msgid "Search by username"
+msgstr "Search by username"
+
+#: apps/web/app/components/home/hero-section.tsx:46
+msgid "See how it works"
+msgstr "See how it works"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:40
+msgid "See your improvement over time"
+msgstr "See your improvement over time"
+
+#: apps/web/app/components/home/how-it-works.tsx:61
+msgid "Select from our library of traditional breathing techniques and meditation practices."
+msgstr "Select from our library of traditional breathing techniques and meditation practices."
+
+#: apps/web/app/components/home/how-it-works.tsx:54
+msgid "Self-Paced Approach"
+msgstr "Self-Paced Approach"
+
+#: apps/web/app/sessions/page.tsx:42
+#: apps/web/components/navigation/main-nav.tsx:51
+msgid "Session"
+msgstr "Session"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:44
+#: apps/web/components/session-analytics/anayltics-help.tsx:318
+msgid "Session Analytics"
+msgstr "Session Analytics"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:380
+msgid "Session Duration"
+msgstr "Session Duration"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:123
+#: apps/web/components/session-analytics/anayltics-help.tsx:374
+msgid "Session Summary"
+msgstr "Session Summary"
+
+#: apps/web/app/components/home/how-it-works.tsx:67
+msgid "Set Your Parameters"
+msgstr "Set Your Parameters"
+
+#: apps/web/app/settings/page.tsx:46
+#: apps/web/components/navigation/main-nav.tsx:69
+msgid "Settings"
+msgstr "Settings"
+
+#: apps/web/app/social/page.tsx:143
+msgid "Share breathing progress"
+msgstr "Share breathing progress"
+
+#: apps/web/app/social/page.tsx:144
+msgid "Share your breathing exercises with your buddies"
+msgstr "Share your breathing exercises with your buddies"
+
+#: apps/web/app/social/page.tsx:135
+msgid "share your mindfulness journey"
+msgstr "share your mindfulness journey"
+
+#: apps/web/app/login/page.tsx:12
+msgid "Sign in to your account to continue"
+msgstr "Sign in to your account to continue"
+
+#: apps/web/components/navigation/main-nav.tsx:85
+msgid "Sign Up"
+msgstr "Sign Up"
+
+#: apps/web/app/components/home/how-it-works.tsx:16
+msgid "Smart Analysis"
+msgstr "Smart Analysis"
+
+#: apps/web/app/components/home/trust-indicators.tsx:29
+msgid "Smart Tools"
+msgstr "Smart Tools"
+
+#: apps/web/app/components/home/how-it-works.tsx:12
+msgid "Smart Tools Approach"
+msgstr "Smart Tools Approach"
+
+#: apps/web/components/navigation/main-nav.tsx:60
+msgid "Social"
+msgstr "Social"
+
+#: apps/web/app/components/home/testimonials.tsx:71
+msgid "Software Engineer"
+msgstr "Software Engineer"
+
+#: apps/web/app/settings/page.tsx:117
+msgid "Sounds"
+msgstr "Sounds"
+
+#: apps/web/app/components/home/trusted-by.tsx:44
+msgid "Sports"
+msgstr "Sports"
+
+#: apps/web/app/components/home/gallery-section.tsx:22
+msgid "Sports Performance"
+msgstr "Sports Performance"
+
+#: apps/web/components/breath-circle/breath-circle.tsx:133
+#: apps/web/components/breath-circle/breath-circle.tsx:250
+msgid "Start"
+msgstr "Start"
+
+#: apps/web/app/components/home/final-cta.tsx:15
+msgid "Start Now"
+msgstr "Start Now"
+
+#: apps/web/components/session-controls/session-controls.tsx:54
+msgid "Start session"
+msgstr "Start session"
+
+#: apps/web/app/membership/page.tsx:508
+msgid "Start Your Free Trial"
+msgstr "Start Your Free Trial"
+
+#: apps/web/app/components/home/hero-section.tsx:37
+msgid "Start your journey"
+msgstr "Start your journey"
+
+#: apps/web/app/components/home/premium-content.tsx:50
+msgid "Step-by-step breathing protocols developed by medical professionals for specific conditions"
+msgstr "Step-by-step breathing protocols developed by medical professionals for specific conditions"
+
+#: apps/web/components/session-controls/session-controls.tsx:122
+msgid "Stop"
+msgstr "Stop"
+
+#: apps/web/components/session-controls/session-controls.tsx:79
+msgid "Stop session"
+msgstr "Stop session"
+
+#: apps/web/app/membership/page.tsx:216
+msgid "Streak"
+msgstr "Streak"
+
+#: apps/web/app/components/home/trusted-by.tsx:70
+msgid "Stress Management"
+msgstr "Stress Management"
+
+#: apps/web/app/components/home/gallery-section.tsx:13
+msgid "Stress Relief"
+msgstr "Stress Relief"
+
+#: apps/web/app/components/home/premium-content.tsx:57
+msgid "Success Stories"
+msgstr "Success Stories"
+
+#: apps/web/app/settings/page.tsx:94
+msgid "Sunday"
+msgstr "Sunday"
+
+#: apps/web/app/components/home/explore-more.tsx:73
+msgid "Support"
+msgstr "Support"
+
+#: apps/web/app/social/page.tsx:64
+msgid "Tailored for you"
+msgstr "Tailored for you"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:13
+msgid "Take control of your physical and mental state with real-time breathing analytics. Monitor patterns, track progress, and optimize your well-being."
+msgstr "Take control of your physical and mental state with real-time breathing analytics. Monitor patterns, track progress, and optimize your well-being."
+
+#: apps/web/app/components/home/footer.tsx:176
+msgid "Terms of Service"
+msgstr "Terms of Service"
+
+#: apps/web/app/components/home/trusted-by.tsx:71
+msgid "Therapists and wellness experts"
+msgstr "Therapists and wellness experts"
+
+#: apps/web/app/membership/page.tsx:229
+msgid "Time Saved"
+msgstr "Time Saved"
+
+#: apps/web/app/components/home/our-story.tsx:18
+msgid "Today, Breathtake stands at the intersection of science and wellness, backed by medical research and trusted by professionals across various fields. Our commitment to innovation and user experience continues to drive us forward as we help people worldwide breathe better, live better."
+msgstr "Today, Breathtake stands at the intersection of science and wellness, backed by medical research and trusted by professionals across various fields. Our commitment to innovation and user experience continues to drive us forward as we help people worldwide breathe better, live better."
+
+#: apps/web/components/session-controls/session-controls.tsx:89
+msgid "Toggle Music"
+msgstr "Toggle Music"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:127
+#: apps/web/components/session-analytics/anayltics-help.tsx:377
+msgid "Total Breaths"
+msgstr "Total Breaths"
+
+#: apps/web/app/social/page.tsx:119
+msgid "Total Minutes"
+msgstr "Total Minutes"
+
+#: apps/web/app/membership/page.tsx:203
+msgid "Total Sessions"
+msgstr "Total Sessions"
+
+#: apps/web/app/components/home/how-it-works.tsx:85
+msgid "Track Manually"
+msgstr "Track Manually"
+
+#: apps/web/app/components/home/features-grid.tsx:23
+msgid "Track your progress and receive meaningful feedback that helps you build better habits and improve your daily well-being."
+msgstr "Track your progress and receive meaningful feedback that helps you build better habits and improve your daily well-being."
+
+#: apps/web/app/components/home/dashboard-interface.tsx:22
+msgid "Track your stress levels"
+msgstr "Track your stress levels"
+
+#: apps/web/app/components/home/footer.tsx:19
+msgid "Transforming lives through better breathing."
+msgstr "Transforming lives through better breathing."
+
+#: apps/web/app/components/home/trusted-by.tsx:14
+msgid "Trusted by professionals and creators"
+msgstr "Trusted by professionals and creators"
+
+#: apps/web/app/components/home/trust-indicators.tsx:21
+msgid "Trusted Community"
+msgstr "Trusted Community"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:268
+msgid "Try to maintain a more consistent rhythm."
+msgstr "Try to maintain a more consistent rhythm."
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:261
+msgid "Try to slow down to 5-6 BPM for optimal results."
+msgstr "Try to slow down to 5-6 BPM for optimal results."
+
+#: apps/web/app/settings/page.tsx:52
+msgid "Units"
+msgstr "Units"
+
+#: apps/web/app/membership/page.tsx:343
+msgid "Unlock the full potential of your breathing practice with our premium features"
+msgstr "Unlock the full potential of your breathing practice with our premium features"
+
+#: apps/web/app/components/home/hero-section.tsx:23
+msgid "Upgrade your self-care with a free premium on us"
+msgstr "Upgrade your self-care with a free premium on us"
+
+#: apps/web/app/components/home/how-it-works.tsx:79
+msgid "Use our intuitive visual and audio cues to maintain your chosen breathing pattern."
+msgstr "Use our intuitive visual and audio cues to maintain your chosen breathing pattern."
+
+#: apps/web/app/components/home/trust-indicators.tsx:15
+msgid "Validated by leading medical institutions and breathing experts"
+msgstr "Validated by leading medical institutions and breathing experts"
+
+#: apps/web/components/session-controls/session-controls.tsx:45
+msgid "Vibrate"
+msgstr "Vibrate"
+
+#: apps/web/app/components/home/premium-content.tsx:41
+msgid "Video diaries and testimonials from our medical ambassadors and wellness experts"
+msgstr "Video diaries and testimonials from our medical ambassadors and wellness experts"
+
+#: apps/web/app/components/home/explore-more.tsx:66
+msgid "View Events"
+msgstr "View Events"
+
+#: apps/web/app/components/home/explore-more.tsx:30
+msgid "View Studies"
+msgstr "View Studies"
+
+#: apps/web/app/settings/page.tsx:120
+msgid "Voice"
+msgstr "Voice"
+
+#: apps/web/app/settings/page.tsx:228
+msgid "Voice Guides"
+msgstr "Voice Guides"
+
+#: apps/web/app/components/home/how-it-works.tsx:104
+msgid "Watch Demo Video"
+msgstr "Watch Demo Video"
+
+#: apps/web/app/components/home/how-it-works.tsx:99
+msgid "Watch How Breathtake Works"
+msgstr "Watch How Breathtake Works"
+
+#: apps/web/app/membership/page.tsx:493
+msgid "We accept all major credit cards, PayPal, and Apple Pay."
+msgstr "We accept all major credit cards, PayPal, and Apple Pay."
+
+#: apps/web/app/settings/page.tsx:74
+msgid "Week starts on"
+msgstr "Week starts on"
+
+#: apps/web/app/login/page.tsx:11
+msgid "Welcome back"
+msgstr "Welcome back"
+
+#: apps/web/app/components/home/testimonials.tsx:7
+msgid "What Our Users Say"
+msgstr "What Our Users Say"
+
+#: apps/web/app/membership/page.tsx:490
+msgid "What payment methods do you accept?"
+msgstr "What payment methods do you accept?"
+
+#: apps/web/app/components/home/our-story.tsx:15
+msgid "What started as a personal quest for better breathing evolved into a mission to make these powerful techniques accessible to everyone. We combined ancient wisdom with modern technology, creating a platform that makes breathing exercises not just effective, but engaging and personalized."
+msgstr "What started as a personal quest for better breathing evolved into a mission to make these powerful techniques accessible to everyone. We combined ancient wisdom with modern technology, creating a platform that makes breathing exercises not just effective, but engaging and personalized."
+
+#: apps/web/app/membership/page.tsx:485
+msgid "Yes, we offer a 7-day free trial for all premium features. No credit card required."
+msgstr "Yes, we offer a 7-day free trial for all premium features. No credit card required."
+
+#: apps/web/app/membership/page.tsx:479
+msgid "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle."
+msgstr "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle."
+
+#: apps/web/app/components/home/testimonials.tsx:23
+msgid "Yoga Instructor"
+msgstr "Yoga Instructor"
+
+#: apps/web/app/components/home/hero-section.tsx:31
+msgid "Your body is your main device — your breath is your dashboard. Take control of your well-being with personalized breathing analytics and real-time guidance."
+msgstr "Your body is your main device — your breath is your dashboard. Take control of your well-being with personalized breathing analytics and real-time guidance."
+
+#: apps/web/app/membership/page.tsx:131
+msgid "Your Current Plan"
+msgstr "Your Current Plan"
+
+#: apps/web/app/membership/page.tsx:460
+msgid "Your data is encrypted and never shared with third parties"
+msgstr "Your data is encrypted and never shared with third parties"
+
+#: apps/web/app/membership/page.tsx:164
+msgid "Your Features"
+msgstr "Your Features"
+
+#: apps/web/app/components/home/hero-section.tsx:27
+msgid "Your personal breathing assistant"
+msgstr "Your personal breathing assistant"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:10
+msgid "Your Personal Breathing Dashboard"
+msgstr "Your Personal Breathing Dashboard"

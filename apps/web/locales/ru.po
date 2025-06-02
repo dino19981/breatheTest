@@ -1,0 +1,1204 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-03-25 20:20+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: apps/web/app/components/home/testimonials.tsx:100
+msgid "\"As a meditation teacher, I'm always looking for new tools to recommend to my students. Breathtake's combination of traditional techniques and modern technology is truly innovative.\""
+msgstr "\"Как учитель медитации, я всегда ищу новые инструменты, которые можно рекомендовать своим ученикам. Сочетание традиционных техник и современных технологий Breathtake действительно инновационно.\""
+
+#: apps/web/app/components/home/testimonials.tsx:36
+msgid "\"As a professional athlete, I need every advantage I can get. Breathtake's real-time feedback and personalized sessions have significantly improved my performance and recovery times.\""
+msgstr "\"Как профессиональному спортсмену, мне нужно каждое преимущество, которое я могу получить. Мгновенная обратная связь и персонализированные сессии Breathtake значительно улучшили мои результаты и время восстановления.\""
+
+#: apps/web/app/components/home/testimonials.tsx:20
+msgid "\"Breathtake has completely transformed my daily routine. The AI-guided sessions are incredibly effective at reducing my stress levels. I've never felt more in control of my breathing and overall well-being.\""
+msgstr "\"Breathtake полностью изменил мой распорядок дня. Сеансы под руководством ИИ невероятно эффективны в снижении уровня стресса. Я никогда не чувствовал себя более контролирующим свое дыхание и общее благополучие.\""
+
+#: apps/web/app/components/home/testimonials.tsx:68
+msgid "\"I was skeptical at first, but the scientific research backing Breathtake convinced me to try it. The results have been amazing - better sleep, more focus, and reduced stress levels.\""
+msgstr "\"Сначала я была скептически настроена, но научные исследования за Breathtake убедили меня попробовать его. Результаты были потрясающими - более хороший сон, больше концентрации и снижение уровня стресса.\""
+
+#: apps/web/app/components/home/testimonials.tsx:52
+msgid "\"The premium content library is worth every penny. The medical expert insights and clinical protocols have helped me better understand and manage my anxiety. Highly recommended!\""
+msgstr "\"Библиотека премиум-контента стоит каждой потраченной копейки. Мнения медицинских экспертов и клинические протоколы помогли мне лучше понять и справиться с тревогой. Настоятельно рекомендую!\""
+
+#: apps/web/app/components/home/testimonials.tsx:84
+msgid "\"The self-paced approach is perfect for my busy schedule. I love being able to customize my sessions and track my progress over time. It's become an essential part of my daily routine.\""
+msgstr "\"Самостоятельный подход идеально подходит для моего плотного графика. Мне нравится возможность настраивать свои сессии и отслеживать прогресс с течением времени. Это стало неотъемлемой частью моего ежедневного распорядка.\""
+
+#. placeholder {0}: new Date().getFullYear()
+#: apps/web/app/components/home/footer.tsx:169
+msgid "© {0} Breathtake. All rights reserved."
+msgstr "© {0} Breathtake. Все права защищены."
+
+#: apps/web/app/social/page.tsx:78
+msgid "30-Day Mindful Breathing Challenge"
+msgstr "30-дневный вызов осознанного дыхания"
+
+#: apps/web/app/components/home/footer.tsx:136
+msgid "About Us"
+msgstr "О нас"
+
+#: apps/web/app/components/home/features-grid.tsx:33
+msgid "Access a growing library of guided meditations, breathing techniques, and mindfulness exercises."
+msgstr "Получите доступ к постоянно растущей библиотеке управляемых медитаций, дыхательных техник и упражнений на осознанность."
+
+#: apps/web/app/membership/page.tsx:447
+msgid "Access exclusive breathing techniques and guided sessions"
+msgstr "Получите доступ к эксклюзивным дыхательным техникам и управляемым сессиям."
+
+#: apps/web/app/components/home/explore-more.tsx:51
+msgid "Access free guides, worksheets, and tools to enhance your breathing practice."
+msgstr "Получите доступ к бесплатным руководствам, рабочим листам и инструментам для улучшения вашей практики дыхания."
+
+#: apps/web/app/components/home/premium-content.tsx:32
+msgid "Access to peer-reviewed studies, clinical trials, and breakthrough research on breathing techniques"
+msgstr "Доступ к рецензируемым исследованиям, клиническим испытаниям и прорывным исследованиям дыхательных методов."
+
+#: apps/web/app/membership/page.tsx:445
+msgid "Advanced Exercises"
+msgstr "Продвинутые упражнения"
+
+#: apps/web/app/components/home/how-it-works.tsx:28
+msgid "AI automatically generates custom breathing exercises tailored to your current state and goals."
+msgstr "ИИ автоматически генерирует индивидуальные дыхательные упражнения, адаптированные к вашему текущему состоянию и целями."
+
+#: apps/web/app/components/home/how-it-works.tsx:46
+msgid "AI monitors your improvement and automatically adjusts future sessions for better outcomes."
+msgstr "ИИ отслеживает ваш прогресс и автоматически корректирует будущие сессии для лучших результатов."
+
+#: apps/web/app/membership/page.tsx:419
+msgid "AI-Powered Insights"
+msgstr "Инсайты на основе ИИ"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:264
+msgid "Aim for equal inhale and exhale durations."
+msgstr ""
+
+#: apps/web/app/components/home/premium-content.tsx:39
+msgid "Ambassador Stories"
+msgstr "Истории амбассадоров"
+
+#: apps/web/app/settings/page.tsx:248
+msgid "Analytics"
+msgstr "Аналитика"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:31
+msgid "Analyze your breathing rhythm"
+msgstr "Анализируйте свой дыхательный ритм"
+
+#: apps/web/app/settings/page.tsx:189
+msgid "App Icon"
+msgstr "Иконка приложения"
+
+#: apps/web/app/settings/page.tsx:160
+msgid "App Preferences"
+msgstr "Предпочтения приложения"
+
+#: apps/web/components/session-controls/session-controls.tsx:105
+msgid "Are you sure you want to stop? Your progress will be saved."
+msgstr "Вы уверены, что хотите остановиться? Ваш прогресс будет сохранен."
+
+#: apps/web/app/components/home/trusted-by.tsx:45
+msgid "Athletes and coaches"
+msgstr "Спортсмены и тренеры"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:402
+msgid "Average Confidence"
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:406
+msgid "Average Inference Time"
+msgstr ""
+
+#: apps/web/app/settings/page.tsx:201
+msgid "Background"
+msgstr "Фон"
+
+#: apps/web/app/settings/page.tsx:213
+msgid "Background Music"
+msgstr "Фоновая музыка"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:135
+#: apps/web/components/session-analytics/anayltics-help.tsx:384
+msgid "Best Minute"
+msgstr ""
+
+#: apps/web/app/components/home/gallery-section.tsx:40
+msgid "Better Sleep"
+msgstr "Лучший сон"
+
+#: apps/web/app/membership/page.tsx:240
+msgid "Billing History"
+msgstr "История выставления счетов"
+
+#: apps/web/app/components/home/footer.tsx:97
+#: apps/web/app/components/home/explore-more.tsx:13
+msgid "Blog"
+msgstr "Блог"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:58
+#: apps/web/components/session-analytics/anayltics-help.tsx:326
+msgid "BPM"
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:96
+#: apps/web/components/session-analytics/anayltics-help.tsx:334
+msgid "Breath Pattern"
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:70
+#: apps/web/components/session-analytics/anayltics-help.tsx:362
+msgid "Breath Score"
+msgstr ""
+
+#: apps/web/components/phase-text/phase-text.tsx:13
+msgid "Breathe in…"
+msgstr "Вдох…"
+
+#: apps/web/components/phase-text/phase-text.tsx:15
+msgid "Breathe out…"
+msgstr "Выдох…"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:99
+#: apps/web/components/session-analytics/anayltics-help.tsx:336
+msgid "Breathing"
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:186
+msgid "Breathing Efficiency"
+msgstr ""
+
+#: apps/web/app/components/home/dashboard-interface.tsx:30
+msgid "Breathing Patterns"
+msgstr "Дыхательные шаблоны"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:54
+#: apps/web/components/session-analytics/anayltics-help.tsx:324
+msgid "Breathing Rate"
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:194
+msgid "Breaths/Min"
+msgstr ""
+
+#: apps/web/app/components/home/footer.tsx:17
+msgid "Breathtake"
+msgstr "Breathtake"
+
+#: apps/web/app/components/home/our-story.tsx:12
+msgid "Breathtake was born from a simple observation: while breathing is fundamental to life, most of us don't breathe optimally. Our journey began when our founder, a former professional athlete, discovered the transformative power of proper breathing techniques during recovery from a career-ending injury."
+msgstr "Breathtake родился из простого наблюдения: хотя дыхание является важнейшим для жизни, большинство из нас дышит не оптимально. Наша история началась, когда наш основатель, бывший профессиональный спортсмен, обнаружил преобразующую силу правильных дыхательных техник во время восстановления после травмы, которая завершила его карьеру."
+
+#: apps/web/app/components/home/gallery-section.tsx:7
+msgid "BreathTAKING Gallery"
+msgstr "Галерея Захватывающих Дыханий"
+
+#: apps/web/app/social/page.tsx:58
+msgid "Buddies"
+msgstr "Партнеры"
+
+#: apps/web/app/components/home/trusted-by.tsx:103
+msgid "Business"
+msgstr "Бизнес"
+
+#: apps/web/app/social/page.tsx:109
+msgid "Calm Breathing Collective"
+msgstr "Коллектив Спокойного Дыхания"
+
+#: apps/web/app/components/home/gallery-section.tsx:14
+msgid "Calm your mind"
+msgstr "Успокойте свой разум"
+
+#: apps/web/app/membership/page.tsx:476
+msgid "Can I change my plan later?"
+msgstr "Могу ли я изменить свой план позже?"
+
+#: apps/web/components/session-controls/session-controls.tsx:113
+msgid "Cancel"
+msgstr "Отменить"
+
+#: apps/web/app/components/home/footer.tsx:144
+msgid "Careers"
+msgstr "Карьера"
+
+#: apps/web/app/social/page.tsx:46
+msgid "Challenges"
+msgstr "Вызовы"
+
+#: apps/web/app/settings/page.tsx:195
+#: apps/web/app/settings/page.tsx:207
+msgid "Change"
+msgstr "Изменить"
+
+#: apps/web/app/membership/page.tsx:180
+msgid "Change Plan"
+msgstr "Изменить план"
+
+#: apps/web/app/membership/page.tsx:341
+msgid "Choose Your Plan"
+msgstr "Выберите свой план"
+
+#: apps/web/app/components/home/how-it-works.tsx:58
+msgid "Choose Your Practice"
+msgstr "Выберите свою практику"
+
+#: apps/web/app/settings/page.tsx:166
+msgid "Choose your preferred color scheme"
+msgstr "Выберите предпочитаемую цветовую гамму"
+
+#: apps/web/app/components/home/premium-content.tsx:48
+msgid "Clinical Protocols"
+msgstr "Клинические протоколы"
+
+#: apps/web/app/settings/page.tsx:164
+msgid "Colour Scheme"
+msgstr "Цветовая схема"
+
+#: apps/web/app/components/home/explore-more.tsx:37
+msgid "Community"
+msgstr "Сообщество"
+
+#: apps/web/app/components/home/footer.tsx:129
+msgid "Company"
+msgstr "Компания"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:157
+msgid "Confidence"
+msgstr ""
+
+#: apps/web/app/social/page.tsx:134
+msgid "Connect with breathing buddies and"
+msgstr "Свяжитесь с вашими партнерами по дыханию и"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:272
+msgid "Consider adding brief holds between breaths."
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:221
+msgid "Consider adjusting your breathing pace"
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:390
+msgid "Consistency Score"
+msgstr ""
+
+#: apps/web/app/components/home/footer.tsx:152
+msgid "Contact"
+msgstr "Контакт"
+
+#: apps/web/app/components/home/premium-content.tsx:76
+msgid "Content Preview"
+msgstr "Предварительный просмотр контента"
+
+#: apps/web/app/components/home/footer.tsx:179
+msgid "Cookie Policy"
+msgstr "Политика в отношении файлов cookie"
+
+#: apps/web/app/signup/page.tsx:11
+msgid "Create an account"
+msgstr "Создать аккаунт"
+
+#: apps/web/components/session-header/session-header.tsx:172
+msgid "Current breathing protocol loaded"
+msgstr "Текущий дыхательный протокол загружен"
+
+#: apps/web/app/components/home/how-it-works.tsx:70
+msgid "Customize session duration, breathing rhythm, and guidance level to match your preferences."
+msgstr "Настройте продолжительность сеанса, ритм дыхания и уровень руководства в соответствии с вашими предпочтениями."
+
+#: apps/web/app/settings/page.tsx:203
+msgid "Customize your app background"
+msgstr "Настройте фон вашего приложения"
+
+#: apps/web/app/settings/page.tsx:191
+msgid "Customize your app icon"
+msgstr "Настройте значок вашего приложения"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:190
+msgid "Cycle Time"
+msgstr ""
+
+#: apps/web/app/social/page.tsx:85
+msgid "Daily Goal"
+msgstr "Ежедневная цель"
+
+#: apps/web/app/components/home/trusted-by.tsx:107
+msgid "David Kim, Tech CEO"
+msgstr "Дэвид Ким, технический директор"
+
+#: apps/web/app/sessions/page.tsx:28
+msgid "Delete all"
+msgstr "Удалить все"
+
+#: apps/web/app/components/home/explore-more.tsx:15
+msgid "Discover articles about breathing techniques, wellness tips, and the latest research in respiratory health."
+msgstr "Исследуйте статьи о дыхательных методах, советы по благополучию и последние исследования в области здоровья дыхательной системы."
+
+#: apps/web/app/components/home/trusted-by.tsx:19
+msgid "Doctors and healthcare providers"
+msgstr "Врачи и поставщики медицинских услуг"
+
+#: apps/web/app/components/home/explore-more.tsx:54
+msgid "Download Resources"
+msgstr "Загрузить ресурсы"
+
+#: apps/web/app/components/home/premium-content.tsx:68
+msgid "Downloadable medical guides, breathing assessment tools, and progress tracking templates"
+msgstr "Загружаемые медицинские руководства, инструменты для оценки дыхания и шаблоны для отслеживания прогресса"
+
+#: apps/web/app/components/home/trusted-by.tsx:22
+msgid "Dr. Sarah Chen, Pulmonologist"
+msgstr "Доктор Сара Чен, пульмонолог"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:131
+msgid "Duration"
+msgstr ""
+
+#: apps/web/app/components/home/trust-indicators.tsx:31
+msgid "Easy-to-follow personalized instruments with built-in guidance"
+msgstr "Персонализированные инструменты с легким сопровождением"
+
+#: apps/web/app/components/home/features-grid.tsx:11
+msgid "Easy-to-Follow Sessions"
+msgstr "Легкие для выполнения сессии"
+
+#: apps/web/app/components/home/trusted-by.tsx:74
+msgid "Emma Thompson, Mindfulness Coach"
+msgstr "Эмма Томпсон, тренер по внимательности"
+
+#: apps/web/app/settings/page.tsx:230
+msgid "Enable voice guidance during breathing exercises"
+msgstr "Включить голосовые подсказки во время дыхательных упражнений"
+
+#: apps/web/components/session-controls/session-controls.tsx:103
+msgid "End session?"
+msgstr "Завершить сеанс?"
+
+#: apps/web/app/components/home/gallery-section.tsx:32
+msgid "Enhance concentration"
+msgstr "Усильте концентрацию"
+
+#: apps/web/app/components/home/testimonials.tsx:87
+msgid "Entrepreneur"
+msgstr "Предприниматель"
+
+#: apps/web/app/sessions/page.tsx:45
+msgid "events"
+msgstr "события"
+
+#: apps/web/app/components/home/explore-more.tsx:61
+msgid "Events"
+msgstr "События"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:84
+#: apps/web/components/session-analytics/anayltics-help.tsx:366
+msgid "Excellent session!"
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:260
+msgid "Excellent! You're in the coherent breathing zone."
+msgstr ""
+
+#: apps/web/app/components/home/premium-content.tsx:23
+msgid "Exclusive articles and video sessions from leading pulmonologists, cardiologists, and respiratory therapists"
+msgstr "Эксклюзивные статьи и видеосессии от ведущих пульмонологов, кардиологов и терапевтов"
+
+#: apps/web/app/components/home/trusted-by.tsx:104
+msgid "Executives and teams"
+msgstr "Руководители и команды"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:107
+#: apps/web/components/session-analytics/anayltics-help.tsx:347
+#: apps/web/components/breath-circle/breath-circle.tsx:128
+#: apps/web/components/breath-circle/breath-circle.tsx:142
+msgid "Exhale"
+msgstr "Выдох"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:109
+#: apps/web/components/session-analytics/anayltics-help.tsx:350
+msgid "Exhale Hold"
+msgstr ""
+
+#: apps/web/app/components/home/explore-more.tsx:8
+msgid "Explore More"
+msgstr "Изучить больше"
+
+#: apps/web/app/components/home/explore-more.tsx:27
+msgid "Explore scientific studies and clinical trials that validate the effectiveness of breathing exercises."
+msgstr "Исследуйте научные исследования и клинические испытания, подтверждающие эффективность дыхательных упражнений."
+
+#: apps/web/app/components/home/footer.tsx:58
+msgid "Features"
+msgstr "Функции"
+
+#: apps/web/app/social/page.tsx:150
+msgid "Find Breathing Buddies"
+msgstr "Найдите партнеров по дыханию"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:209
+msgid "Flow Rate"
+msgstr ""
+
+#: apps/web/app/components/home/gallery-section.tsx:31
+msgid "Focus & Productivity"
+msgstr "Внимательность и производительность"
+
+#: apps/web/app/components/home/how-it-works.tsx:76
+msgid "Follow Along"
+msgstr "Следуйте инструкциям"
+
+#: apps/web/app/membership/page.tsx:471
+msgid "Frequently Asked Questions"
+msgstr "Часто задаваемые вопросы"
+
+#: apps/web/app/settings/page.tsx:49
+msgid "General"
+msgstr "Общие"
+
+#: apps/web/app/components/home/explore-more.tsx:75
+msgid "Get help with your breathing practice, technical support, or general inquiries."
+msgstr "Получите помощь в вашей практике дыхания, техническую поддержку или общие вопросы."
+
+#: apps/web/app/components/home/how-it-works.tsx:37
+msgid "Get instant feedback and adjustments during your session for optimal results."
+msgstr "Получайте мгновенную обратную связь и корректировки во время сеанса для достижения оптимальных результатов."
+
+#: apps/web/app/membership/page.tsx:421
+msgid "Get personalized recommendations based on your breathing patterns"
+msgstr "Получите персонализированные рекомендации на основе ваших дыхательных моделей"
+
+#: apps/web/app/components/home/explore-more.tsx:78
+msgid "Get Support"
+msgstr "Получить поддержку"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:271
+msgid "Good breath holds!"
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:86
+#: apps/web/components/session-analytics/anayltics-help.tsx:368
+msgid "Good session, keep practicing!"
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:263
+msgid "Great breathing pattern!"
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:267
+msgid "Great consistency in your breathing pattern!"
+msgstr ""
+
+#: apps/web/app/social/page.tsx:89
+msgid "Group Minutes"
+msgstr "Групповые минуты"
+
+#: apps/web/app/social/page.tsx:52
+msgid "Groups"
+msgstr "Группы"
+
+#: apps/web/app/components/home/footer.tsx:113
+msgid "Guides"
+msgstr "Руководства"
+
+#: apps/web/app/membership/page.tsx:432
+msgid "Health Tracking"
+msgstr "Отслеживание здоровья"
+
+#: apps/web/app/components/home/testimonials.tsx:55
+msgid "Healthcare Professional"
+msgstr "Медицинский работник"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:21
+msgid "Heart Rate Variability"
+msgstr "Вариабельность сердечного ритма"
+
+#: apps/web/app/components/home/footer.tsx:121
+msgid "Help Center"
+msgstr "Центр поддержки"
+
+#: apps/web/app/settings/page.tsx:250
+msgid "Help us improve by sharing anonymous usage data"
+msgstr "Помогите нам улучшиться, делясь анонимными данными об использовании"
+
+#: apps/web/components/breath-circle/breath-circle.tsx:131
+#: apps/web/components/breath-circle/breath-circle.tsx:144
+msgid "Hold"
+msgstr "Задержка"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:200
+msgid "Hold Ratio"
+msgstr ""
+
+#: apps/web/components/phase-text/phase-text.tsx:16
+msgid "Hold…"
+msgstr "Задержка…"
+
+#: apps/web/components/navigation/main-nav.tsx:42
+msgid "Home"
+msgstr "Главная"
+
+#: apps/web/app/components/home/how-it-works.tsx:8
+msgid "How it Works"
+msgstr "Как это работает"
+
+#: apps/web/app/settings/page.tsx:68
+msgid "Imperial"
+msgstr "Имперская"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:161
+msgid "Inference Time"
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:102
+#: apps/web/components/session-analytics/anayltics-help.tsx:340
+#: apps/web/components/breath-circle/breath-circle.tsx:126
+#: apps/web/components/breath-circle/breath-circle.tsx:140
+msgid "Inhale"
+msgstr "Вдох"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:104
+#: apps/web/components/session-analytics/anayltics-help.tsx:343
+msgid "Inhale Hold"
+msgstr ""
+
+#: apps/web/app/components/home/dashboard-interface.tsx:47
+msgid "Interactive Dashboard Demo"
+msgstr "Интерактивная демонстрация панели"
+
+#: apps/web/app/membership/page.tsx:483
+msgid "Is there a free trial?"
+msgstr "Есть ли пробная версия?"
+
+#: apps/web/app/components/home/trust-indicators.tsx:23
+msgid "Join 50,000+ users improving their well-being daily"
+msgstr "Присоединяйтесь к более чем 50,000 пользователей, улучшая свои благополучия ежедневно"
+
+#: apps/web/app/components/home/explore-more.tsx:42
+msgid "Join Community"
+msgstr "Присоединяйтесь к сообществу"
+
+#: apps/web/app/social/page.tsx:123
+msgid "Join Group"
+msgstr "Присоединиться к группе"
+
+#: apps/web/app/social/page.tsx:93
+msgid "Join now"
+msgstr "Присоединяйтесь сейчас"
+
+#: apps/web/app/components/home/explore-more.tsx:39
+msgid "Join our growing community of breathing enthusiasts, share experiences, and learn from others."
+msgstr "Присоединяйтесь к нашему растущему сообществу энтузиастов дыхания, делитесь опытом и учитесь у других."
+
+#: apps/web/app/components/home/explore-more.tsx:63
+msgid "Join our webinars, workshops, and live sessions with breathing experts."
+msgstr "Присоединяйтесь к нашим вебинарам, семинарам и живым сеансам с экспертами по дыханию"
+
+#: apps/web/app/components/home/final-cta.tsx:11
+msgid "Join thousands of users who have already discovered the power of proper breathing. Start your journey to better health and well-being today."
+msgstr "Присоединяйтесь к тысячам пользователей, которые уже открыли для себя силу правильного дыхания. Начните свое путешествие к лучшему здоровью и благополучию уже сегодня."
+
+#: apps/web/app/membership/page.tsx:505
+msgid "Join thousands of users who have improved their well-being with Breathtake."
+msgstr "Присоединяйтесь к тысячам пользователей, которые улучшили свое благополучие с Breathtake."
+
+#: apps/web/app/signup/page.tsx:13
+msgid "Join us to get started with your journey"
+msgstr "Присоединяйтесь к нам, чтобы начать свое путешествие"
+
+#: apps/web/app/components/home/how-it-works.tsx:88
+msgid "Keep a personal log of your sessions and note your mental and physical improvements."
+msgstr "Ведите личный журнал своих сеансов и отмечайте свои ментальные и физические улучшения."
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:87
+#: apps/web/components/session-analytics/anayltics-help.tsx:369
+msgid "Keep working on your breathing technique."
+msgstr ""
+
+#: apps/web/app/settings/page.tsx:103
+msgid "Language"
+msgstr "Язык"
+
+#: apps/web/app/components/home/final-cta.tsx:19
+msgid "Learn More"
+msgstr "Узнать больше"
+
+#: apps/web/app/components/home/our-story.tsx:21
+msgid "Learn More About Us"
+msgstr "Узнайте больше о нас"
+
+#: apps/web/components/navigation/main-nav.tsx:82
+msgid "Login"
+msgstr "Войти"
+
+#: apps/web/app/membership/page.tsx:187
+msgid "Manage Subscription"
+msgstr ""
+
+#: apps/web/app/membership/page.tsx:133
+msgid "Manage your subscription and access your premium features"
+msgstr "Управляйте вашей подпиской и получайте доступ к премиум функциям"
+
+#: apps/web/app/components/home/trusted-by.tsx:18
+msgid "Medical"
+msgstr "Медицинский"
+
+#: apps/web/app/components/home/premium-content.tsx:21
+msgid "Medical Expert Insights"
+msgstr "Инсайты медицинских экспертов"
+
+#: apps/web/app/components/home/premium-content.tsx:66
+msgid "Medical Resources"
+msgstr "Медицинские ресурсы"
+
+#: apps/web/app/components/home/testimonials.tsx:103
+msgid "Meditation Teacher"
+msgstr "Учитель медитации"
+
+#: apps/web/app/social/page.tsx:115
+msgid "Members"
+msgstr "Участники"
+
+#: apps/web/app/settings/page.tsx:60
+msgid "Metric"
+msgstr "Метрическая"
+
+#: apps/web/app/components/home/trusted-by.tsx:48
+msgid "Michael Rodriguez, Olympic Coach"
+msgstr "Майкл Родригес, олимпийский тренер"
+
+#: apps/web/app/social/page.tsx:76
+msgid "Mindful Breathing Club"
+msgstr "Клуб осознанного дыхания"
+
+#: apps/web/app/social/page.tsx:110
+msgid "Mindfulness"
+msgstr "Внимательность"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:381
+msgid "minutes"
+msgstr ""
+
+#: apps/web/app/components/home/footer.tsx:82
+msgid "Mobile App"
+msgstr "Мобильное приложение"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:153
+#: apps/web/components/session-analytics/anayltics-help.tsx:399
+msgid "Model Performance"
+msgstr ""
+
+#: apps/web/app/settings/page.tsx:84
+msgid "Monday"
+msgstr "Понедельник"
+
+#: apps/web/app/membership/page.tsx:434
+msgid "Monitor your stress levels and heart rate variability"
+msgstr "Отслеживайте свои уровни стресса и вариабельность сердечного ритма"
+
+#: apps/web/app/settings/page.tsx:139
+msgid "Music"
+msgstr "Музыка"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:220
+msgid "Optimal breathing cycle duration"
+msgstr ""
+
+#: apps/web/app/components/home/gallery-section.tsx:23
+msgid "Optimize your training"
+msgstr "Оптимизируйте свою тренировку"
+
+#: apps/web/app/components/home/how-it-works.tsx:19
+msgid "Our AI analyzes your breathing patterns and stress levels in real-time using advanced biometric tracking."
+msgstr "Наш ИИ анализирует ваши дыхательные шаблоны и уровни стресса в реальном времени с использованием продвинутого биометрического отслеживания."
+
+#: apps/web/app/components/home/our-story.tsx:10
+#: apps/web/app/components/home/our-story.tsx:28
+msgid "Our Story"
+msgstr "Наша история"
+
+#: apps/web/components/session-controls/session-controls.tsx:62
+msgid "Pause"
+msgstr "Пауза"
+
+#: apps/web/app/components/home/features-grid.tsx:21
+msgid "Personal Growth Insights"
+msgstr "Инсайты личного роста"
+
+#: apps/web/app/components/home/features-grid.tsx:13
+msgid "Personalized breathing exercises tailored to your needs. Our built-in assistant makes it simple to start and maintain your practice."
+msgstr "Персонализированные дыхательные упражнения, адаптированные к вашим потребностям. Наш встроенный помощник делает начало и поддержание вашей практики простым."
+
+#: apps/web/app/components/home/how-it-works.tsx:25
+msgid "Personalized Sessions"
+msgstr "Персонализированные сессии"
+
+#: apps/web/app/settings/page.tsx:215
+msgid "Play calming background music during sessions"
+msgstr "Воспроизводите успокаивающую фоновую музыку во время сеансов"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:165
+#: apps/web/components/session-analytics/anayltics-help.tsx:410
+msgid "Prediction Accuracy"
+msgstr ""
+
+#: apps/web/app/components/home/footer.tsx:74
+#: apps/web/app/components/home/features-grid.tsx:31
+msgid "Premium Content"
+msgstr "Премиум-контент"
+
+#: apps/web/app/components/home/premium-content.tsx:16
+msgid "Premium Content Library"
+msgstr "Библиотека премиум-контента"
+
+#: apps/web/app/membership/page.tsx:410
+msgid "Premium Features"
+msgstr "Премиум функции"
+
+#: apps/web/app/components/home/footer.tsx:160
+msgid "Press"
+msgstr "Пресса"
+
+#: apps/web/app/components/home/footer.tsx:66
+msgid "Pricing"
+msgstr "Цены"
+
+#: apps/web/app/settings/page.tsx:244
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+#: apps/web/app/membership/page.tsx:458
+msgid "Privacy Focused"
+msgstr "Сосредоточено на конфиденциальности"
+
+#: apps/web/app/components/home/footer.tsx:173
+msgid "Privacy Policy"
+msgstr "Политика конфиденциальности"
+
+#: apps/web/app/social/page.tsx:81
+msgid "Prize"
+msgstr "Приз"
+
+#: apps/web/app/components/home/footer.tsx:51
+msgid "Product"
+msgstr "Продукт"
+
+#: apps/web/app/components/home/testimonials.tsx:39
+msgid "Professional Athlete"
+msgstr "Профессиональный спортсмен"
+
+#: apps/web/app/components/home/how-it-works.tsx:43
+#: apps/web/app/components/home/dashboard-interface.tsx:39
+msgid "Progress Tracking"
+msgstr "Отслеживание прогресса"
+
+#: apps/web/app/components/home/explore-more.tsx:18
+msgid "Read Articles"
+msgstr "Читать статьи"
+
+#: apps/web/app/membership/page.tsx:502
+msgid "Ready to transform your breathing practice?"
+msgstr "Готовы изменить свою практику дыхания?"
+
+#: apps/web/app/components/home/final-cta.tsx:9
+msgid "Ready to Transform Your Breathing?"
+msgstr "Готовы изменить свое дыхание?"
+
+#: apps/web/app/components/home/premium-content.tsx:59
+msgid "Real case studies and testimonials from users who improved their health through breathing"
+msgstr "Реальные кейсы и отзывы пользователей, которые улучшили свое здоровье через дыхание"
+
+#: apps/web/app/components/home/how-it-works.tsx:34
+msgid "Real-time Guidance"
+msgstr "Руководство в реальном времени"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:139
+msgid "Regularity"
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:387
+msgid "Regularity Score"
+msgstr ""
+
+#: apps/web/app/components/home/footer.tsx:105
+#: apps/web/app/components/home/explore-more.tsx:25
+msgid "Research"
+msgstr "Исследования"
+
+#: apps/web/app/components/home/trust-indicators.tsx:13
+msgid "Research-Backed"
+msgstr "Поддержано исследованиями"
+
+#: apps/web/app/components/home/footer.tsx:90
+#: apps/web/app/components/home/explore-more.tsx:49
+msgid "Resources"
+msgstr "Ресурсы"
+
+#: apps/web/app/components/home/gallery-section.tsx:41
+msgid "Rest and recover"
+msgstr "Отдых и восстановление"
+
+#: apps/web/components/session-controls/session-controls.tsx:71
+msgid "Resume"
+msgstr "Продолжить"
+
+#: apps/web/app/sessions/page.tsx:22
+msgid "Saved Sessions"
+msgstr "Сохраненные сессии"
+
+#: apps/web/app/components/home/premium-content.tsx:30
+msgid "Scientific Research"
+msgstr "Научные исследования"
+
+#: apps/web/app/social/page.tsx:154
+msgid "Search by username"
+msgstr "Поиск по имени пользователя"
+
+#: apps/web/app/components/home/hero-section.tsx:46
+msgid "See how it works"
+msgstr "Посмотрите, как это работает"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:40
+msgid "See your improvement over time"
+msgstr "Посмотрите свой прогресс с течением времени"
+
+#: apps/web/app/components/home/how-it-works.tsx:61
+msgid "Select from our library of traditional breathing techniques and meditation practices."
+msgstr "Выберите из нашей библиотеки традиционных дыхательных техник и практик медитации."
+
+#: apps/web/app/components/home/how-it-works.tsx:54
+msgid "Self-Paced Approach"
+msgstr "Самостоятельный подход"
+
+#: apps/web/app/sessions/page.tsx:42
+#: apps/web/components/navigation/main-nav.tsx:51
+msgid "Session"
+msgstr "Сессия"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:44
+#: apps/web/components/session-analytics/anayltics-help.tsx:318
+msgid "Session Analytics"
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:380
+msgid "Session Duration"
+msgstr ""
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:123
+#: apps/web/components/session-analytics/anayltics-help.tsx:374
+msgid "Session Summary"
+msgstr ""
+
+#: apps/web/app/components/home/how-it-works.tsx:67
+msgid "Set Your Parameters"
+msgstr "Установите свои параметры"
+
+#: apps/web/app/settings/page.tsx:46
+#: apps/web/components/navigation/main-nav.tsx:69
+msgid "Settings"
+msgstr "Настройки"
+
+#: apps/web/app/social/page.tsx:143
+msgid "Share breathing progress"
+msgstr "Поделитесь прогрессом в дыхании"
+
+#: apps/web/app/social/page.tsx:144
+msgid "Share your breathing exercises with your buddies"
+msgstr "Поделитесь своими дыхательными упражнениями с вашими партнерами"
+
+#: apps/web/app/social/page.tsx:135
+msgid "share your mindfulness journey"
+msgstr "поделитесь своим путешествием к внимательности"
+
+#: apps/web/app/login/page.tsx:12
+msgid "Sign in to your account to continue"
+msgstr "Войдите в свой аккаунт, чтобы продолжить"
+
+#: apps/web/components/navigation/main-nav.tsx:85
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: apps/web/app/components/home/how-it-works.tsx:16
+msgid "Smart Analysis"
+msgstr "Умный анализ"
+
+#: apps/web/app/components/home/trust-indicators.tsx:29
+msgid "Smart Tools"
+msgstr "Умные инструменты"
+
+#: apps/web/app/components/home/how-it-works.tsx:12
+msgid "Smart Tools Approach"
+msgstr "Подход умных инструментов"
+
+#: apps/web/components/navigation/main-nav.tsx:60
+msgid "Social"
+msgstr "Социальный"
+
+#: apps/web/app/components/home/testimonials.tsx:71
+msgid "Software Engineer"
+msgstr "Инженер-программист"
+
+#: apps/web/app/settings/page.tsx:117
+msgid "Sounds"
+msgstr "Звуки"
+
+#: apps/web/app/components/home/trusted-by.tsx:44
+msgid "Sports"
+msgstr "Спорт"
+
+#: apps/web/app/components/home/gallery-section.tsx:22
+msgid "Sports Performance"
+msgstr "Спортивная производительность"
+
+#: apps/web/components/breath-circle/breath-circle.tsx:133
+#: apps/web/components/breath-circle/breath-circle.tsx:250
+msgid "Start"
+msgstr "Начать"
+
+#: apps/web/app/components/home/final-cta.tsx:15
+msgid "Start Now"
+msgstr "Начать сейчас"
+
+#: apps/web/components/session-controls/session-controls.tsx:54
+msgid "Start session"
+msgstr "Начать сессию"
+
+#: apps/web/app/membership/page.tsx:508
+msgid "Start Your Free Trial"
+msgstr "Начните бесплатную пробную версию"
+
+#: apps/web/app/components/home/hero-section.tsx:37
+msgid "Start your journey"
+msgstr "Начните свое путешествие"
+
+#: apps/web/app/components/home/premium-content.tsx:50
+msgid "Step-by-step breathing protocols developed by medical professionals for specific conditions"
+msgstr "Пошаговые дыхательные протоколы, разработанные медицинскими профессионалами для специфических состояний"
+
+#: apps/web/components/session-controls/session-controls.tsx:122
+msgid "Stop"
+msgstr "Остановить"
+
+#: apps/web/components/session-controls/session-controls.tsx:79
+msgid "Stop session"
+msgstr "Остановить сессию"
+
+#: apps/web/app/membership/page.tsx:216
+msgid "Streak"
+msgstr "Полоса"
+
+#: apps/web/app/components/home/trusted-by.tsx:70
+msgid "Stress Management"
+msgstr "Управление стрессом"
+
+#: apps/web/app/components/home/gallery-section.tsx:13
+msgid "Stress Relief"
+msgstr "Снятие стресса"
+
+#: apps/web/app/components/home/premium-content.tsx:57
+msgid "Success Stories"
+msgstr "Истории успеха"
+
+#: apps/web/app/settings/page.tsx:94
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: apps/web/app/components/home/explore-more.tsx:73
+msgid "Support"
+msgstr "Поддержка"
+
+#: apps/web/app/social/page.tsx:64
+msgid "Tailored for you"
+msgstr "Разработано для вас"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:13
+msgid "Take control of your physical and mental state with real-time breathing analytics. Monitor patterns, track progress, and optimize your well-being."
+msgstr "Возьмите под контроль свое физическое и психическое состояние с помощью аналитики дыхания в реальном времени. Отслеживайте модели, отслеживайте прогресс и оптимизируйте свое благополучие."
+
+#: apps/web/app/components/home/footer.tsx:176
+msgid "Terms of Service"
+msgstr "Условия обслуживания"
+
+#: apps/web/app/components/home/trusted-by.tsx:71
+msgid "Therapists and wellness experts"
+msgstr "Терапевты и эксперты по благополучию"
+
+#: apps/web/app/membership/page.tsx:229
+msgid "Time Saved"
+msgstr "Сэкономленное время"
+
+#: apps/web/app/components/home/our-story.tsx:18
+msgid "Today, Breathtake stands at the intersection of science and wellness, backed by medical research and trusted by professionals across various fields. Our commitment to innovation and user experience continues to drive us forward as we help people worldwide breathe better, live better."
+msgstr "Сегодня Breathtake стоит на пересечении науки и благополучия, поддержан медицинскими исследованиями и доверен профессионалами из разных областей. Наша приверженность инновациям и пользовательскому опыту продолжает двигать нас вперед, помогая людям во всем мире дышать лучше, жить лучше."
+
+#: apps/web/components/session-controls/session-controls.tsx:89
+msgid "Toggle Music"
+msgstr "Переключить музыку"
+
+#: apps/web/components/session-analytics/session-analytics-dialog.tsx:127
+#: apps/web/components/session-analytics/anayltics-help.tsx:377
+msgid "Total Breaths"
+msgstr ""
+
+#: apps/web/app/social/page.tsx:119
+msgid "Total Minutes"
+msgstr "Общее время (минуты)"
+
+#: apps/web/app/membership/page.tsx:203
+msgid "Total Sessions"
+msgstr "Всего сессий"
+
+#: apps/web/app/components/home/how-it-works.tsx:85
+msgid "Track Manually"
+msgstr "Отслеживать вручную"
+
+#: apps/web/app/components/home/features-grid.tsx:23
+msgid "Track your progress and receive meaningful feedback that helps you build better habits and improve your daily well-being."
+msgstr "Отслеживайте свой прогресс и получайте значимую обратную связь, которая поможет вам сформировать лучшие привычки и улучшить ваше ежедневное благополучие."
+
+#: apps/web/app/components/home/dashboard-interface.tsx:22
+msgid "Track your stress levels"
+msgstr "Отслеживайте свои уровни стресса"
+
+#: apps/web/app/components/home/footer.tsx:19
+msgid "Transforming lives through better breathing."
+msgstr "Изменение жизней через лучшее дыхание."
+
+#: apps/web/app/components/home/trusted-by.tsx:14
+msgid "Trusted by professionals and creators"
+msgstr "Доверено профессионалами и создателями"
+
+#: apps/web/app/components/home/trust-indicators.tsx:21
+msgid "Trusted Community"
+msgstr "Доверенное сообщество"
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:268
+msgid "Try to maintain a more consistent rhythm."
+msgstr ""
+
+#: apps/web/components/session-analytics/anayltics-help.tsx:261
+msgid "Try to slow down to 5-6 BPM for optimal results."
+msgstr ""
+
+#: apps/web/app/settings/page.tsx:52
+msgid "Units"
+msgstr "Единицы измерения"
+
+#: apps/web/app/membership/page.tsx:343
+msgid "Unlock the full potential of your breathing practice with our premium features"
+msgstr "Откройте весь потенциал своей дыхательной практики с нашими премиум функциями"
+
+#: apps/web/app/components/home/hero-section.tsx:23
+msgid "Upgrade your self-care with a free premium on us"
+msgstr "Улучшите свой уход за собой с бесплатным премиум от нас"
+
+#: apps/web/app/components/home/how-it-works.tsx:79
+msgid "Use our intuitive visual and audio cues to maintain your chosen breathing pattern."
+msgstr "Используйте наши интуитивно понятные визуальные и аудио подсказки, чтобы поддерживать ваш выбранный дыхательный шаблон."
+
+#: apps/web/app/components/home/trust-indicators.tsx:15
+msgid "Validated by leading medical institutions and breathing experts"
+msgstr "Подтверждено ведущими медицинскими учреждениями и экспертами по дыханию"
+
+#: apps/web/components/session-controls/session-controls.tsx:45
+msgid "Vibrate"
+msgstr "Вибрация"
+
+#: apps/web/app/components/home/premium-content.tsx:41
+msgid "Video diaries and testimonials from our medical ambassadors and wellness experts"
+msgstr "Видеодневники и отзывы от наших медицинских амбассадоров и экспертов по благополучию"
+
+#: apps/web/app/components/home/explore-more.tsx:66
+msgid "View Events"
+msgstr "Посмотреть события"
+
+#: apps/web/app/components/home/explore-more.tsx:30
+msgid "View Studies"
+msgstr "Посмотреть исследования"
+
+#: apps/web/app/settings/page.tsx:120
+msgid "Voice"
+msgstr "Голос"
+
+#: apps/web/app/settings/page.tsx:228
+msgid "Voice Guides"
+msgstr "Голосовые руководства"
+
+#: apps/web/app/components/home/how-it-works.tsx:104
+msgid "Watch Demo Video"
+msgstr "Смотреть демо-видео"
+
+#: apps/web/app/components/home/how-it-works.tsx:99
+msgid "Watch How Breathtake Works"
+msgstr "Смотрите, как работает Breathtake"
+
+#: apps/web/app/membership/page.tsx:493
+msgid "We accept all major credit cards, PayPal, and Apple Pay."
+msgstr "Мы принимаем все основные кредитные карты, PayPal и Apple Pay."
+
+#: apps/web/app/settings/page.tsx:74
+msgid "Week starts on"
+msgstr "Неделя начинается с"
+
+#: apps/web/app/login/page.tsx:11
+msgid "Welcome back"
+msgstr "С возвращением"
+
+#: apps/web/app/components/home/testimonials.tsx:7
+msgid "What Our Users Say"
+msgstr "Что говорят наши пользователи"
+
+#: apps/web/app/membership/page.tsx:490
+msgid "What payment methods do you accept?"
+msgstr "Какие методы оплаты вы принимаете?"
+
+#: apps/web/app/components/home/our-story.tsx:15
+msgid "What started as a personal quest for better breathing evolved into a mission to make these powerful techniques accessible to everyone. We combined ancient wisdom with modern technology, creating a platform that makes breathing exercises not just effective, but engaging and personalized."
+msgstr "То, что началось как личный поиск более лучшего дыхания, превратилось в миссию сделать эти мощные техники доступными для всех. Мы соединили древнюю мудрость с современными технологиями, создавая платформу, которая делает дыхательные упражнения не только эффективными, но и увлекательными и персонализированными."
+
+#: apps/web/app/membership/page.tsx:485
+msgid "Yes, we offer a 7-day free trial for all premium features. No credit card required."
+msgstr "Да, мы предлагаем 7-дневную бесплатную пробную версию для всех премиум функций. Кредитная карта не требуется."
+
+#: apps/web/app/membership/page.tsx:479
+msgid "Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle."
+msgstr "Да, вы можете повысить или понизить свой план в любое время. Изменения отразятся в вашем следующем платежном цикле."
+
+#: apps/web/app/components/home/testimonials.tsx:23
+msgid "Yoga Instructor"
+msgstr "Инструктор по йоге"
+
+#: apps/web/app/components/home/hero-section.tsx:31
+msgid "Your body is your main device — your breath is your dashboard. Take control of your well-being with personalized breathing analytics and real-time guidance."
+msgstr "Ваше тело - ваш основной инструмент, а ваше дыхание - ваша панель управления. Контролируйте свое благополучие с помощью персонализированной аналитики дыхания и руководства в реальном времени."
+
+#: apps/web/app/membership/page.tsx:131
+msgid "Your Current Plan"
+msgstr "Ваш текущий план"
+
+#: apps/web/app/membership/page.tsx:460
+msgid "Your data is encrypted and never shared with third parties"
+msgstr "Ваши данные зашифрованы и никогда не передаются третьим лицам"
+
+#: apps/web/app/membership/page.tsx:164
+msgid "Your Features"
+msgstr "Ваши функции"
+
+#: apps/web/app/components/home/hero-section.tsx:27
+msgid "Your personal breathing assistant"
+msgstr "Ваш личный помощник по дыханию"
+
+#: apps/web/app/components/home/dashboard-interface.tsx:10
+msgid "Your Personal Breathing Dashboard"
+msgstr "Ваша панель управления дыханием"
