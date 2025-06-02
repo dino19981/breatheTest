@@ -57,6 +57,9 @@ importers:
       '@lingui/macro':
         specifier: 5.3.1
         version: 5.3.1(@lingui/babel-plugin-lingui-macro@5.3.1(babel-plugin-macros@3.1.0)(typescript@5.7.3))(babel-plugin-macros@3.1.0)(react@19.1.0)
+      '@netlify/plugin-nextjs':
+        specifier: ^5.11.2
+        version: 5.11.2
       '@svgr/webpack':
         specifier: ^8.1.0
         version: 8.1.0(typescript@5.7.3)
@@ -1909,6 +1912,10 @@ packages:
     engines: {node: '>=12.0.0'}
     peerDependencies:
       next: '>=12.2.0'
+
+  '@netlify/plugin-nextjs@5.11.2':
+    resolution: {integrity: sha512-9Hgd/J5nP2U/Vv0teytq9uUAGppiKV9t5tzpsuMLqeqUGD9STxXwKmyZd2v8Z4THSW9rw4+8w7dH7LVlFoym2A==}
+    engines: {node: '>=18.0.0'}
 
   '@next/env@15.3.1':
     resolution: {integrity: sha512-cwK27QdzrMblHSn9DZRV+DQscHXRuJv6MydlJRpFSqJWZrTYMLzKDeyueJNN9MGd8NNiUKzDQADAf+dMLXX7YQ==}
@@ -8673,6 +8680,8 @@ snapshots:
   '@netlify/next@1.4.9(next@15.3.1(@babel/core@7.26.10)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
     dependencies:
       next: 15.3.1(@babel/core@7.26.10)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+
+  '@netlify/plugin-nextjs@5.11.2': {}
 
   '@next/env@15.3.1': {}
 
